@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0" />
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0" />
     <title>DW Medios</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
@@ -16,20 +17,24 @@
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/css/mdb.min.css" rel="stylesheet" />
     <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/preloader.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mainSection.css">
+    <link rel="stylesheet" href="css/areaSection.css">
     <link rel="stylesheet" href="css/standardSection.css">
     <link rel="stylesheet" href="css/aboutSection.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/areaSection.css">
-    <link rel="stylesheet" href="css/deviceBreakpoints.css">
+
     <!-- Icono -->
     <link rel="icon" type="image/png"
         href="https://upload.wikimedia.org/wikipedia/commons/6/61/Red_Silhouette_-_Gear_and_Tools.svg" />
 </head>
 
-<body>
+<body class="hidden">
+<!-- Loader -->
+<div id="loader"></div>
+
     <section class="header">
         <!--Navbar-->
         <nav class="navbar navbar-expand-lg navbar-light white fixed-top navbg">
@@ -169,149 +174,149 @@
         <!-- Navbar -->
     </section>
 
-   
+
     <!-- Main -->
-	<section class="main" id="main">
-		<div class="row no-gutters">
-			<div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-9">
-				<div class="leftside">
-					<div class="animation-area">
-						<div class="circles">
-							<img src="img/gear.png" alt="" />
-							<img src="img/gear.png" alt="" />
-							<img src="img/gear.png" alt="" />
-							<img src="img/gear.png" alt="" />
-							<img src="img/gear.png" alt="" />
-							<img src="img/gear.png" alt="" />
-							<img src="img/gear.png" alt="" />
-							<img src="img/gear.png" alt="" />
-							<img src="img/gear.png" alt="" />
-							<img src="img/gear.png" alt="" />
-						</div>
-					</div>
-					<div class="info-left">
-						<div class="container-fluid">
-							<p class="text-right">Implementamos <span class="txt-type" data-wait="3000"
-                                data-words='["ideas", "equipos", "experiencia", "tecnología", "innovación"]'></span><br>
-                            para una solución<br>
-                            exitosa.</p>
-							<a href="#about" class="btn btn-danger">Contáctanos</a>
-							<img class="info-img" src="img/Group.png" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-3">
-				<div class="rightside">
-					<div class="row no-gutters mx-0">
-						<div class="col-sm-12 col-md-4 col-lg-12 info-main px-0">
-							<div class="contenido text-center first">
-								<img src="img/web.png" class="img-fluid" alt="">
-								<h5>Desarrollo Web</h5>
-								<div class="btnsuccess">
-									<a href="" class="btn btn-success">conoce más</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-12 col-md-4 col-lg-12 info-main px-0">
-							<div class="contenido text-center second">
-								<img src="img/mobile.png" alt="" class="img-fluid">
-								<h5>Desarrollo Móvil</h5>
-								<div class="btnsuccess">
-									<a href="" class="btn btn-success">conoce más</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-12 col-md-4 col-lg-12 info-main px-0">
-							<div class="contenido text-center third">
-								<img src="img/product.png" alt="" class="img-fluid">
-								<h5>Diseño de Productos</h5>
-								<div class="btnsuccess">
-									<a href="" class="btn btn-success">conoce más</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <section class="main" id="main">
+        <div class="row no-gutters">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-9">
+                <div class="leftside">
+                    <div class="info-left">
+                        <div class="container-fluid">
+                            <p class="text-right">Implementamos <span class="txt-type" data-wait="3000"
+                                    data-words='["ideas", "equipos", "experiencia", "tecnología", "innovación"]'></span><br>
+                                para una solución<br>
+                                exitosa.</p>
+                            <a href="#about" class="btn btn-danger float-right">Contáctanos</a>
+                            <img class="info-img img-fluid" src="img/Group.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
+                <div class="rightside">
+                    <div class="row no-gutters mx-0">
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-12 info-main px-0">
+                            <div class="contenido text-center first">
+                                <img src="img/web.png" class="img-fluid" alt="">
+                                <h5>Desarrollo Web</h5>
+                                <div class="btnsuccess">
+                                    <a href="" class="btn btn-success">conoce más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-12 info-main px-0">
+                            <div class="contenido text-center second">
+                                <img src="img/mobile.png" alt="" class="img-fluid">
+                                <h5>Desarrollo Móvil</h5>
+                                <div class="btnsuccess">
+                                    <a href="" class="btn btn-success">conoce más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-12 info-main px-0">
+                            <div class="contenido text-center third">
+                                <img src="img/product.png" alt="" class="img-fluid">
+                                <h5>Diseño de Productos</h5>
+                                <div class="btnsuccess">
+                                    <a href="" class="btn btn-success">conoce más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- Áreas de desarrollo -->
     <section class="areas" id="areas">
-        <div class="container-fluid pt-5 text-center">
-            <h1 class="areatitle">Áreas</h1>
-            <p class="texttitulo">Usamos las tecnologias más novedosas para proveer la mejor solución que responda a las
-                necesidades del
-                mercado.</p>
-            <div class="container">
-                <ul id="tabsJustified" class="nav nav-tabs nav-fill">
-                    <li class="nav-item"><a href="" data-target="#home1" data-toggle="tab"
-                            class="nav-link tab-title text-uppercase active  text-center"><img src="img/web.png" alt=""><br><br>
-                            Desarrollo
-                            Web</a></li>
-                    <li class="nav-item"><a href="" data-target="#profile1" data-toggle="tab"
-                            class="nav-link tab-title text-uppercase text-center"><img src="img/mobile.png"
-                                alt=""><br><br> Desarrollo
-                            Móvil</a></li>
-                    <li class="nav-item"><a href="" data-target="#messages1" data-toggle="tab"
-                            class="nav-link tab-title text-uppercase text-center"><img src="img/product.png" alt=""><br><br> Desarrollo
-                            de
-                            Productos</a></li>
-                </ul>
-                <br>
-                <div id="tabsJustifiedContent" class="tab-content shadow p-3 mb-3 bg-white rounded">
-                    <div id="home1" class="tab-pane fade active show">
-                        <div class="row pb-2">
-                            <div class="col-md-5 imgTab"><img src="img/web.png" class=" img-rounded">
-                            </div>
-                            <div class="col-md-7">
-                                <p class="texttab">Sabemos que las soluciones web adecuadas brindarán resultados para su
-                                    negocio. Podemos ayudarte con una amplia gama de servicios para cualquier negocio o
-                                    PYME. Ya sea que solo esté planeando su primer producto o una expansion; nosotros lo
-                                    ayudaremos. Nuestros servicios son de extremo a extremo: ayudamos con consultoría,
-                                    análisis de negocios, diseño y desarrollo.</p>
-                                <p class="textobjetivo text-center">Nuestro principal objetivo es el éxito de su
-                                    negocio.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="profile1" class="tab-pane fade ">
-                        <div class="row pb-2">
-                            <div class="col-md-5 imgTab"><img src="img/mobile.png" width="117" height="117"
-                                    class="img-rounded">
-                            </div>
-                            <div class="col-md-7">
-                                <p class="texttab">El desarrollo de aplicaciones móviles (o simplemente desarrollo
-                                    móvil) le proporciona una herramienta moderna y eficiente para trabajar no solo con
-                                    sus clientes, sino también con los empleados de su propia empresa. Con una
-                                    aplicación de este tipo, puede administrar fácilmente tanto la empresa como los
-                                    empleados, porque las aplicaciones móviles permiten dar instrucciones, seguir las
-                                    noticias, ver y enviar documentos, etc. </p>
-                                <p class="textobjetivo text-center">Nuestro principal objetivo es el éxito de su
-                                    negocio.
-                                </p>
+        <div class="d-flex flex-column">
+            <div class="container-fluid pt-5 text-center">
+                <h1 class="areatitle">Áreas</h1>
+                <p class="texttitulo">Usamos las tecnologias más novedosas para proveer la mejor solución que responda a
+                    las
+                    necesidades del
+                    mercado.</p>
+                <div class="container">
+                    <ul id="tabsJustified" class="nav nav-tabs nav-fill">
+                        <li class="nav-item"><a href="" data-target="#home1" data-toggle="tab"
+                                class="nav-link tab-title text-uppercase active  text-center"><img src="img/web.png"
+                                    alt=""><br><br>
+                                Desarrollo
+                                Web</a></li>
+                        <li class="nav-item"><a href="" data-target="#profile1" data-toggle="tab"
+                                class="nav-link tab-title text-uppercase text-center"><img src="img/mobile.png"
+                                    alt=""><br><br> Desarrollo
+                                Móvil</a></li>
+                        <li class="nav-item"><a href="" data-target="#messages1" data-toggle="tab"
+                                class="nav-link tab-title text-uppercase text-center"><img src="img/product.png"
+                                    alt=""><br><br> Desarrollo
+                                de
+                                Productos</a></li>
+                    </ul>
+                    <br>
+                    <div id="tabsJustifiedContent" class="tab-content shadow p-3 mb-3 bg-white rounded">
+                        <div id="home1" class="tab-pane fade active show">
+                            <div class="row pb-2">
+                                <div class="col-md-5 imgTab"><img src="img/web.png" class=" img-rounded">
+                                </div>
+                                <div class="col-md-7">
+                                    <p class="texttab">Sabemos que las soluciones web adecuadas brindarán resultados
+                                        para su
+                                        negocio. Podemos ayudarte con una amplia gama de servicios para cualquier
+                                        negocio o
+                                        PYME. Ya sea que solo esté planeando su primer producto o una expansion;
+                                        nosotros lo
+                                        ayudaremos. Nuestros servicios son de extremo a extremo: ayudamos con
+                                        consultoría,
+                                        análisis de negocios, diseño y desarrollo.</p>
+                                    <p class="textobjetivo text-center">Nuestro principal objetivo es el éxito de su
+                                        negocio.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="messages1" class="tab-pane fade">
-                        <div class="row pb-2">
-                            <div class="col-md-5 imgTab"><img src="img/product.png" class="img-rounded">
+                        <div id="profile1" class="tab-pane fade ">
+                            <div class="row pb-2">
+                                <div class="col-md-5 imgTab"><img src="img/mobile.png" width="117" height="117"
+                                        class="img-rounded">
+                                </div>
+                                <div class="col-md-7">
+                                    <p class="texttab">El desarrollo de aplicaciones móviles (o simplemente desarrollo
+                                        móvil) le proporciona una herramienta moderna y eficiente para trabajar no solo
+                                        con
+                                        sus clientes, sino también con los empleados de su propia empresa. Con una
+                                        aplicación de este tipo, puede administrar fácilmente tanto la empresa como los
+                                        empleados, porque las aplicaciones móviles permiten dar instrucciones, seguir
+                                        las
+                                        noticias, ver y enviar documentos, etc. </p>
+                                    <p class="textobjetivo text-center">Nuestro principal objetivo es el éxito de su
+                                        negocio.
+                                    </p>
+                                </div>
                             </div>
-                            <div class="col-md-7">
-                                <p class="texttab">El diseño de productos es tan amplio que nos adaptamos a tus
-                                    requerimientos y necesidades. Realizamos el servicio de diseño mecanico, modelado
-                                    3D, programación de microcontroladores, IoT, diseño electrónico, impresion 3D
-                                    (FDM/SLA), no solo contamos con el personal capacitado para el area de ingenieria
-                                    sino tambien en el area de documentacion, gestion, consultoria de marcas, registros
-                                    y patentes.</p>
-                                <p class="textobjetivo text-center">Nuestro principal objetivo es el éxito de su
-                                    negocio.
-                                </p>
-                            </div>
+                        </div>
+                        <div id="messages1" class="tab-pane fade">
+                            <div class="row pb-2">
+                                <div class="col-md-5 imgTab"><img src="img/product.png" class="img-rounded">
+                                </div>
+                                <div class="col-md-7">
+                                    <p class="texttab">El diseño de productos es tan amplio que nos adaptamos a tus
+                                        requerimientos y necesidades. Realizamos el servicio de diseño mecanico,
+                                        modelado
+                                        3D, programación de microcontroladores, IoT, diseño electrónico, impresion 3D
+                                        (FDM/SLA), no solo contamos con el personal capacitado para el area de
+                                        ingenieria
+                                        sino tambien en el area de documentacion, gestion, consultoria de marcas,
+                                        registros
+                                        y patentes.</p>
+                                    <p class="textobjetivo text-center">Nuestro principal objetivo es el éxito de su
+                                        negocio.
+                                    </p>
+                                </div>
 
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -323,45 +328,43 @@
 
 
     <!-- Standard -->
-    <section class="standard" id="standard">
-        <div class="container">
+    <section class="standard container-fluid">
+        <div class="d-flex flex-column">
             <h1 class="standard-title text-center">
                 Cumpliendo Estandares Internacionales
             </h1>
-            <div class="row pt-5">
-                <div class="col-xs-11 col-sm-11 col-md-5">
-                    <p class="standard-info">
+            <div class="row">
+                <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <p class="standard-info text-right">
                         Utilizamos las tecnologías más modernas para proporcionar una experiencia de ingeniería de
                         software de primer nivel. Nuestras soluciones reaccionan y responden a las necesidades modernas
                         del mercado y proporcionan una excelente representación del servicio de calidad.
                     </p>
                 </div>
-                <div class="col-xs-1 col-sm-1 col-md-1 middle"></div>
-                <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 col-xl-2 align-items-center pb-5 pt-5 iso"><img
-                        src="img/Logo-iso 1.png" class="img-fluid"></div>
-                <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 col-xl-2 align-items-center pb-5 pt-5 cmmi"><img
-                        src="img/CMMI_Logo 1.png" class="img-fluid"></div>
-                <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 col-xl-2 align-items-center pb-5 pt-5 nyce"><img
-                        src="img/logo-nyce 1.png" class="img-fluid"></div>
-
-
-
+                <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="row logos">
+                        <div class="col-4"><img src="img/Logo-iso 1.png" alt=""
+                                class="img-fluid"></div>
+                        <div class="col-4"><img src="img/CMMI_Logo 1.png" alt=""
+                                class="img-fluid"></div>
+                        <div class="col-4"><img src="img/logo-nyce 1.png" alt=""
+                                class="img-fluid"></div>
+                    </div>
+                </div>
             </div>
             <p class="standard-sub text-center">¡Ofrecemos resultados de alto impacto basados ​​en metodologías
                 exitosas!
             </p>
         </div>
-
-        </div>
     </section>
 
 
     <!-- Seccion Nosotros -->
-    <section class="about pt-3">
-        <div class="container">
+    <section class="aboutUs container-fluid">
+        <div class="d-flex flex-column">
             <h2 class="aboutTitle">Nosotros</h2>
             <div class="row pt-2">
-                <div class="col-md-6 mx-auto pl-2" align="center"><img src="img/about.jpg" class="rounded">
+                <div class="col-md-6 mx-auto" align="center"><img src="img/about.jpg" class="rounded img-fluid">
                 </div>
                 <div class="col-md-6  colInfo">
                     <p class="aboutInfo">En DW Medios trabajamos en colaboración con usted. Nuestro equipo responde
@@ -439,8 +442,6 @@
         </div>
     </footer>
 
-
-
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->
@@ -452,12 +453,13 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/js/mdb.min.js">
     </script>
+<script src="js/preloader.js"></script>
     <!-- Cambio de color navbar scroll -->
     <script src="js/navbar.js"></script>
     <script src="js/mainSection.js"></script>
     <script src="js/typed.js"></script>
     <script>
-        $('.about').mousemove(function (e) {
+        $('.aboutUs').mousemove(function (e) {
             var moveX = (e.pageX * -.5 / 12);
             var moveY = (e.pageY * -.5 / 12);
             $(this).css('background-position', moveX + 'px ' + moveY + 'px')

@@ -1,3 +1,6 @@
+.areas{
+    position: relative;
+}
 .areas h1 {
     font-style: normal;
     font-weight: bold;
@@ -43,40 +46,4 @@ ul li a.nav-link.tab-title.text-uppercase {
     font-size: 26px !important;
     line-height: 55px !important;
     color: #00D2D2 !important;
-}
-
-@media screen and (max-width:991px){
-    /* Seccion Áreas */
-  
-    .areatitle {
-        font-weight: 20px !important;
-    }
-
-    .texttitulo {
-        font-size: 25px;
-
-    }
-
-    .container ul li a img {
-        height: 40px;
-        width: 60px;
-    }
-
-    ul li a.nav-link.tab-title.text-uppercase {
-        font-size: 15px !important;
-        width: 70px !important;
-        height: 120px !important;
-        line-height: 15px !important;
-        text-align: center !important;
-    }
-
-    p.texttab {
-        font-size: 15px !important;
-    }
-
-
-    .textobjetivo {
-        font-size: 20px !important;
-    }
-    
 }

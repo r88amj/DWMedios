@@ -4,14 +4,15 @@
 }
 
 #header {
-    position: absolute;
+    position: relative;
     z-index: 30;
     width: 100%;
 }
 
+
 /* Redimensionar logo navbar */
 .navbar-brand img {
-    height: 2rem;
+    /* height: 2rem; */
     padding-left: 10px;
 }
 

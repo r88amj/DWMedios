@@ -1,95 +1,90 @@
-.main {
-    width: 100%;
+.main{
+    padding: 0;
+    margin: 0;
     height: 970px;
-    margin-bottom: 20px;
 }
 
-/* Informacion lado izquierdo */
-.leftSide {
-    position: relative;
-    /* background: url('../img/main.jpg'); */
-    width: 100%;
+.leftside, .rightside{
     height: 970px;
-    background-size: cover;
-    background-position: center;
 }
 
-.leftSide p {
+
+.main p{
+    margin-top: 100px;
     font-style: normal;
     font-weight: bold;
-    font-size: 60px;
-    line-height: 110px;
+    font-size: 52px;
+    line-height: 50px;  
     color: #000000;
-    padding: 70px 0 0 0;
 }
 
-.leftSide a {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 55px;
-    text-align: right;
-    color: #FFFFFF;
-    background: #CA262B;
-    border-radius: 47px;
+.rightside{
+    display: flex;
 }
 
-.leftSide a:hover{
-    background: white !important;
-    color: rgb(211, 44, 52) !important;
-    border: 1px solid rgb(211, 44, 52) !important;
-}
-
-.leftSide img {
-    width: 70%;
-    height: 70%;
-    padding: -50px 0 0 0;
-}
-
-
-/* Informacion lado derecho */
-.rightSide{
-    position: relative;
+.info-main {
+    height: 324px;
     width: 100%;
-    height: 970px;
-}
-
-.infoRight{
-    height: 323px;
     display: table;
     padding: 0;
     margin: 0;
     border-radius: 0;
 }
 
-.contenidoRight{
-    margin: 0;
+.first{
+    background: #CA262B;
+     margin: 0;
     padding: 0;
     vertical-align: middle;
     display: table-cell;
 }
 
-.contenidoRight h5{
-    font-style: normal;
-font-weight: 600;
-font-size: 30px;
-line-height: 46px;
-color: #FFFFFF;
+.second{
+    background:  #D35D69;
+     margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    display: table-cell;
 }
 
-.right1{
-    background:#CA262B;
-}
-
-.right2{
-    background:  #D35D69 ;
-}
-
-.right3{
+.third{
     background:  #7CA2B2;
+     margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    display: table-cell;
 }
 
-/* Botones "Conoce más" */
+
+.first h5,
+.second h5,
+.third h5 {
+    color: white;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px black
+
+}
+
+a.btn.btn-danger {
+
+    color: white !important;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    padding: .5rem 2rem;
+    text-transform: uppercase;
+    background: #CA262B !important;
+    border-radius: 47px;
+    font-size: 26px;
+}
+
+a.btn.btn-danger:hover {
+    background: white !important;
+    color: rgb(211, 44, 52) !important;
+    border: solid 1px rgb(211, 44, 52) !important;
+    ;
+}
+
+
 a.btn.btn-success {
     background: transparent !important;
     border: 2px solid white;
@@ -120,42 +115,242 @@ a.btn.btn-success:hover {
     transition: 0.4s ease;
 }
 
-.contenidoRight:hover .btnsuccess {
+.contenido:hover .btnsuccess {
     height: 100%;
 }
 
-@media (max-width:991px) {
+
+
+@media screen and (max-width:1199px){
+    .rightside{
+        display: block;
+    }
+
+    .info-main {
+        height: 30vh;
+        width: 100%;
+        display: table;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+    }
+   
+}
+@media screen and (max-width:1199px){
     .main{
-        margin-bottom: 330px;
+        height: 100%;
+    }
+
+    .leftside, .rightside{
+        height: 100%;
     }
 }
 
 
-@media (max-width:767px) {
-    .main{
-        margin-bottom: 950px;
-    }
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .leftSide p {
+@media screen and (max-width:720px){
+    .main p{
+     
         font-size: 40px;
-        line-height: 50px;
-        color: #000000;
-        padding: 100px 0 0 0;
+        line-height: 40px;  
+    
+    }
+
+    a.btn.btn-danger {
+        color: white !important;
+        font-weight: 600;
+        letter-spacing: .1rem;
+        padding: .5rem 2rem;
+        text-transform: uppercase;
+        background: #CA262B !important;
+        border-radius: 47px;
+        font-size: 16px;
+    }
+
+    
+}
+
+@media screen and (max-width:767px){
+    /* Seccion Áreas */
+  
+    .areatitle {
+        font-weight: 12px !important;
+    }
+
+    .texttitulo {
+        font-size: 15px;
+
+    }
+
+    .container ul li a img {
+        height: 20px;
+        width: 40px;
+    }
+
+    ul li a.nav-link.tab-title.text-uppercase {
+        font-size: 10px !important;
+        width: 70px !important;
+        height: 100px !important;
+        line-height: 15px !important;
+        text-align: center;
+    }
+
+    p.texttab {
+        font-size: 10px !important;
+    }
+
+    .imgTab img {
+        height: 40px;
+        width: 60px;
+    }
+
+    .textobjetivo {
+        font-size: 15px !important;
+    }
+    
+}
+
+@media screen and (max-width:600px){
+    .main p{
+     
+        font-size: 30px;
+        line-height: 40px;  
+    
+    }
+
+    a.btn.btn-danger {
+        color: white !important;
+        font-weight: 600;
+        letter-spacing: .1rem;
+        padding: .5rem 2rem;
+        text-transform: uppercase;
+        background: #CA262B !important;
+        border-radius: 47px;
+        font-size: 14px;
+    }
+    
+}
+
+@media screen and (max-width:480px){
+    .main p{
+     
+        font-size: 25px;
+        line-height: 40px;  
+    
+    }
+
+    a.btn.btn-danger {
+        color: white !important;
+        font-weight: 600;
+        letter-spacing: .1rem;
+        padding: .5rem 2rem;
+        text-transform: uppercase;
+        background: #CA262B !important;
+        border-radius: 47px;
+        font-size: 14px;
+    }
+    .navbg .navbar-nav li a {
+        font-weight: 600;
+        font-size: 10px;
+    }
+    .rightside h5 {
+        font-size: 12px;
+    }
+
+    .first img,
+    .third img {
+        height: 50px;
+        width: 80px;
+    }
+
+    .second img {
+        height: 80px;
+        width: 50px;
+    }
+
+    .info-main {
+        height: 20vh;
+    }
+    /* Seccion Áreas */
+
+    .areatitle {
+        font-weight: 12px !important;
+    }
+
+    .texttitulo {
+        font-size: 15px;
+
+    }
+
+    .container ul li a img {
+        height: 20px;
+        width: 40px;
+    }
+
+    ul li a.nav-link.tab-title.text-uppercase {
+        font-size: 10px !important;
+        width: 70px !important;
+        height: 100px !important;
+        line-height: 15px !important;
+        text-align: center;
+    }
+
+    p.texttab {
+        font-size: 10px !important;
+    }
+
+    .imgTab img {
+        height: 40px;
+        width: 60px;
+    }
+
+    .textobjetivo {
+        font-size: 15px !important;
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
+@media screen and (max-width:350px){
+    .main p{
+     
+        font-size: 20px;
+        line-height: 40px;  
+    
+    }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
+    a.btn.btn-danger {
+        color: white !important;
+        font-weight: 600;
+        letter-spacing: .1rem;
+        padding: .5rem 2rem;
+        text-transform: uppercase;
+        background: #CA262B !important;
+        border-radius: 47px;
+        font-size: 12px;
+    }
+    
+    .navbg .navbar-nav li a {
+        font-weight: 600;
+        font-size: 10px;
+    }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
+    .rightside h5 {
+        font-size: 12px;
+    }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
+    .first img,
+    .third img {
+        height: 50px;
+        width: 80px;
+    }
+
+    .second img {
+        height: 80px;
+        width: 50px;
+    }
+
+    .info-main {
+        height: 20vh;
+    }
+
+    
+}
 

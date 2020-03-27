@@ -1,47 +1,95 @@
 .standard{
-  height: 600px;
-  margin-bottom: 50px;
-}
+    margin-bottom: 50px;
+  }
+  
+  
+  .standard-title{
+      font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 110px;
+  color: #000000;
+  }
+  
+  .standard-info{
+      font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 37px;
+  color: #000000;
+  text-align: right;
+  }
+  
+  .standard-sub{
+      font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 84px;
+  color: #FFFFFF;
+  background: #FFC543;
+  border-radius: 30px;
+  margin-top: 3rem;
+  text-align: center;
+  }
+  
+  .middle{
+      border-left:     1px solid #000000;
+  }
+
+  .cmmi, .iso, .nyce{
+      display: table-cell;
+      vertical-align: middle;
+  }
+
+  @media only screen and (max-width:1200px){
+    .standard-sub{
+    font-size: 30px;
+    line-height: 60px;
+    border-radius: 20px;
+    margin-top: 3rem;
+    text-align: center;
+    }
+  }
 
 
-.standard-title{
-    font-style: normal;
-font-weight: bold;
-font-size: 50px;
-line-height: 110px;
-color: #000000;
-}
+  @media only screen and (max-width:987px){
+    .standard-sub{
+    font-size: 22px;
+    line-height: 50px;
+    border-radius: 20px;
+    margin-top: 3rem;
+    text-align: center;
+    }
+  }
+  
 
-.standard-info{
-    font-style: normal;
-font-weight: 300;
-font-size: 20px;
-line-height: 37px;
-color: #000000;
-text-align: right;
-}
+  @media only screen and (max-width:780px){
+    .standard-title{
+        font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 60px;
+    color: #000000;
+    margin-bottom: 20px;
+    }
+    
+    .standard-sub{
+    font-size: 18px;
+    line-height: 40px;
+    border-radius: 20px;
+    margin-top: 3rem;
+    text-align: center;
+    }
 
-.standard-sub{
-    font-style: normal;
-font-weight: bold;
-font-size: 34px;
-line-height: 84px;
-color: #FFFFFF;
-background: #FFC543;
-border-radius: 30px;
-margin-top: 3rem;
-}
-
-.middle{
-    border-left:     1px solid #000000;
-}
-
-.cmmi, .iso, .nyce{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-}
-
-
-
+    .standard-info{
+    font-size: 15px;
+    line-height: 27px;
+    color: #000000;
+    text-align: right;
+    }
+  }
+  
+  
+  
+  
+  

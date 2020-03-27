@@ -1,13 +1,13 @@
-.aboutUs {
+.about {
     background: url('../img/about.png');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
    width: 100%;
    margin-bottom: 50px;
    position: relative;
 }
 
-.aboutUS img{
+.about img{
     height: 90%;
     width: 90%;
 }
@@ -27,3 +27,4 @@
     padding-left: 30px;
   
 }
+
