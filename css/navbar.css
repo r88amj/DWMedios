@@ -12,7 +12,7 @@
 
 /* Redimensionar logo navbar */
 .navbar-brand img {
-    /* height: 2rem; */
+    height: 2rem;
     padding-left: 10px;
 }
 
@@ -31,9 +31,9 @@
     background: rgb(211, 44, 52) !important;
 }
 
-/* .navbg .navbar-nav {
-    margin-right: 100px;
-} */
+.navbg .navbar-nav {
+    margin-right: 12%;
+}
 
 /* Cambiar color links navbar */
 .navbg .navbar-nav li a {
@@ -274,3 +274,18 @@
     background-color: rgb(211, 44, 52) !important;
     color: white !important;
 }
+
+@media screen and (min-width:1800px){
+
+.navbg .navbar-nav {
+    margin-right: 15%;
+}
+}
+
+@media screen and (min-width:1800px){
+
+    .navbg .navbar-nav {
+        margin-right: 17%;
+    }
+    }
+
