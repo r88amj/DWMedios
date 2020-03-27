@@ -1,0 +1,47 @@
+.standard{
+  height: 600px;
+  margin-bottom: 50px;
+}
+
+
+.standard-title{
+    font-style: normal;
+font-weight: bold;
+font-size: 50px;
+line-height: 110px;
+color: #000000;
+}
+
+.standard-info{
+    font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 37px;
+color: #000000;
+text-align: right;
+}
+
+.standard-sub{
+    font-style: normal;
+font-weight: bold;
+font-size: 34px;
+line-height: 84px;
+color: #FFFFFF;
+background: #FFC543;
+border-radius: 30px;
+margin-top: 3rem;
+}
+
+.middle{
+    border-left:     1px solid #000000;
+}
+
+.cmmi, .iso, .nyce{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+
+

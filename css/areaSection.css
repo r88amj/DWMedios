@@ -1,0 +1,49 @@
+.areas{
+    position: relative;
+}
+.areas h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 110px;
+    color: #000000;
+}
+
+ul li a.nav-link.tab-title.text-uppercase {
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 20px !important;
+    line-height: 46px !important;
+    color: #000000 !important;
+}
+
+.texttitulo {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 37px;
+    text-align: center;
+    color: #7CA2B2;
+}
+
+.texttab {
+    font-style: normal;
+    font-weight: 300 !important;
+    font-size: 18px !important;
+    line-height: 27px !important;
+    color: #000000 !important;
+}
+
+
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    border-bottom: 2px solid rgb(211, 44, 52) !important;
+    border: none;
+}
+
+.textobjetivo {
+    font-size: 26px !important;
+    line-height: 55px !important;
+    color: #00D2D2 !important;
+}

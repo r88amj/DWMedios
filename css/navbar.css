@@ -1,0 +1,275 @@
+
+.navbg {
+    box-shadow: none;
+}
+
+#header {
+    position: absolute;
+    z-index: 30;
+    width: 100%;
+}
+
+/* Redimensionar logo navbar */
+.navbar-brand img {
+    height: 2rem;
+    padding-left: 10px;
+}
+
+/* Cambiar color navbar */
+.navbg {
+    background: transparent !important;
+    padding: 20px 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbg:hover {
+    background: rgb(211, 44, 52) !important;
+}
+
+.navbg.scrolled {
+    background: rgb(211, 44, 52) !important;
+}
+
+/* .navbg .navbar-nav {
+    margin-right: 100px;
+} */
+
+/* Cambiar color links navbar */
+.navbg .navbar-nav li a {
+    color: black !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.navbg:hover .navbar-nav li a {
+    color: white !important;
+    text-transform: uppercase;
+}
+
+.navbg.scrolled .navbar-nav li a {
+    color: white !important;
+    text-transform: uppercase;
+}
+
+
+/* Cambiar logo on hover */
+.navbg:hover .logo {
+    content: url('../img/white.svg');
+}
+
+
+/* Cambiar color navbar-toggler */
+.dark-blue-text {
+    color: white !important;
+}
+
+
+#btnred {
+    background: white;
+    color: rgb(211, 44, 52) !important;
+    font-weight: 600;
+    border-radius: 1rem;
+    letter-spacing: .1rem;
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+
+}
+
+
+
+
+@media (min-width:992px) {
+    .hiddenmega {
+        display: none;
+        list-style: none;
+        text-align: center;
+    }
+
+
+    .navbg .estimation {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .navbg:hover .estimation {
+        opacity: 1;
+        visibility: initial;
+    }
+
+    .navbg.scrolled .estimation {
+        visibility: initial;
+        opacity: 1;
+    }
+
+    .navbg.scrolled .estimation:hover {
+        visibility: initial;
+        opacity: 1;
+    }
+
+    /* remove the padding from the navbar so the dropdown hover state is not broken */
+    .navbar {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+    .navbar .nav-item {
+        padding: 1rem 1rem;
+        margin: 0 .5rem;
+    }
+
+    .row.vdivide [class*='col-']:not(:last-child):after {
+        background: #e0e0e0;
+        width: 2px;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        min-height: 70px;
+    }
+
+    /* makes the dropdown full width  */
+    .navbar .dropdown {
+        position: static;
+    }
+
+    .navbar .dropdown-menu {
+        width: 100%;
+        left: 0;
+        right: 0;
+        /*  height of nav-item  */
+        /*  top:45px;*/
+    }
+
+    /* shows the dropdown menu on hover */
+    .navbar .dropdown:hover .dropdown-menu,
+    .navbar .dropdown .dropdown-menu:hover {
+        display: block !important;
+    }
+
+    .navbar .dropdown-menu {
+
+        background-color: #fff;
+    }
+
+}
+
+
+@media (max-width:991px) {
+    .navbg .logo {
+        content: url('../img/white.svg');
+    }
+
+    nav ul {
+        padding:0;
+        margin: 0;
+        display:inline-block;
+        text-align: center;
+    }
+
+    .navbg .navbar-nav li a {
+        color: white !important;
+    }
+
+    li.dropdown {
+        display: none !important;
+    }
+
+    .navbg {
+        background-color: rgb(211, 44, 52) !important;
+    }
+
+    .navbar-collapse ul li {
+        display: block;
+        text-align: center;
+        font-size: 18px;
+    }
+
+
+    .navbg:hover #btnred {
+        background: white !important;
+        color: rgb(211, 44, 52) !important;
+        font-weight: 600;
+        letter-spacing: .1rem;
+        padding: .5rem 1rem;
+        text-transform: uppercase;
+    }
+
+
+    .navbg #btnred {
+        background: white !important;
+        color: rgb(211, 44, 52) !important;
+        font-weight: 600;
+        letter-spacing: .1rem;
+        padding: .5rem 1rem;
+        text-transform: uppercase;
+    }
+
+    
+    .estimation {
+        border: none;
+        /* padding: 14px 28px; */
+        font-size: 18px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .navbg:hover .estimation {
+        border: none;
+        /* padding: 14px 28px; */
+        font-size: 18px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .navbg.scrolled .estimation {
+        border: none;
+        /* padding: 14px 28px; */
+        font-size: 18px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    
+}
+
+
+
+.navbar .dropdown-menu div[class*="col"] {
+    margin-bottom: 1rem;
+
+}
+
+.navbar .dropdown-menu {
+    border: none;
+    border-radius: 0 0 0 0 !important;
+}
+
+
+.custom-pills a {
+    color: rgb(247, 247, 247) !important;
+
+}
+
+.nav-link.dropdown-item.dropdown-submenu.waves-effect.waves-light {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.nav-link.dropdown-item.dropdown-submenu.waves-effect.waves-light:hover,
+.nav-link.waves-effect.waves-light.active:hover,
+.nav-link.waves-effect.waves-light.active {
+    background-color: rgba(245, 245, 245, 0.34);
+}
+
+#v-pills-tabContent {
+    padding: 0 30px;
+}
+
+.navbar-nav>li>.dropdown-menu {
+    background-color: rgb(211, 44, 52) !important;
+    color: white !important;
+}

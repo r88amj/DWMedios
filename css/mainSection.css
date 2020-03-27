@@ -1,0 +1,161 @@
+.main {
+    width: 100%;
+    height: 970px;
+    margin-bottom: 20px;
+}
+
+/* Informacion lado izquierdo */
+.leftSide {
+    position: relative;
+    /* background: url('../img/main.jpg'); */
+    width: 100%;
+    height: 970px;
+    background-size: cover;
+    background-position: center;
+}
+
+.leftSide p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 110px;
+    color: #000000;
+    padding: 70px 0 0 0;
+}
+
+.leftSide a {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 55px;
+    text-align: right;
+    color: #FFFFFF;
+    background: #CA262B;
+    border-radius: 47px;
+}
+
+.leftSide a:hover{
+    background: white !important;
+    color: rgb(211, 44, 52) !important;
+    border: 1px solid rgb(211, 44, 52) !important;
+}
+
+.leftSide img {
+    width: 70%;
+    height: 70%;
+    padding: -50px 0 0 0;
+}
+
+
+/* Informacion lado derecho */
+.rightSide{
+    position: relative;
+    width: 100%;
+    height: 970px;
+}
+
+.infoRight{
+    height: 323px;
+    display: table;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+}
+
+.contenidoRight{
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.contenidoRight h5{
+    font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 46px;
+color: #FFFFFF;
+}
+
+.right1{
+    background:#CA262B;
+}
+
+.right2{
+    background:  #D35D69 ;
+}
+
+.right3{
+    background:  #7CA2B2;
+}
+
+/* Botones "Conoce más" */
+a.btn.btn-success {
+    background: transparent !important;
+    border: 2px solid white;
+    color: white;
+    font-weight: 600;
+    border-radius: 1rem;
+    letter-spacing: .1rem;
+    padding: .5rem 2rem;
+    text-transform: uppercase;
+}
+
+
+a.btn.btn-success:hover {
+    background: white !important;
+    color: rgb(211, 44, 52) !important;
+}
+
+.btnsuccess {
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, 0.5) !important;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+.contenidoRight:hover .btnsuccess {
+    height: 100%;
+}
+
+@media (max-width:991px) {
+    .main{
+        margin-bottom: 330px;
+    }
+}
+
+
+@media (max-width:767px) {
+    .main{
+        margin-bottom: 950px;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .leftSide p {
+        font-size: 40px;
+        line-height: 50px;
+        color: #000000;
+        padding: 100px 0 0 0;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
+
