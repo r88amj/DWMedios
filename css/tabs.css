@@ -1,0 +1,116 @@
+.areas {
+    margin-top: 40px;
+}
+
+.box {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: white;
+    box-shadow: 0px 5px 10px #ccc;
+}
+
+.box ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.box ul li {
+    margin: 0;
+    padding: 0;
+    width: 33%;
+    box-sizing: border-box;
+    text-align: center;
+    list-style: none;
+    cursor: pointer;
+}
+
+.box ul li img {
+    width: 30%;
+    height: 50%;
+    margin-top: 20px;
+}
+
+.box ul li h4 {
+    color: #000000;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+.box ul li.active h4 {
+    color: rgb(211, 44, 52) !important;
+}
+
+.box ul li.active {
+    border-bottom: 1px solid red !important;
+}
+
+.content {
+    padding: 30px;
+}
+
+.content .texttab {
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    color: #000000;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.content .textobjetivo {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 55px;
+    color: #00D2D2;
+}
+
+.areas h2 {
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 110px;
+    color: #000000;
+}
+
+.areas .texttitulo {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 37px;
+    text-align: center;
+    color: #7CA2B2;
+}
+
+.areas .active {
+    display: block;
+}
+
+.oculto {
+    display: none;
+}
+
+@media (max-width:992px){
+#webTab h4{
+    padding-top: 20px;
+}
+
+    #webTab img{
+        
+        width: 80px;
+        height: 62px;
+    }
+
+    #devTab img{
+        width: 80px;
+        height: 80px;
+        padding-top: 0;
+    }
+
+    #proTab img{
+        width: 80px;
+        height: 62px;
+    }
+}

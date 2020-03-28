@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/mainSection.css">
-    <link rel="stylesheet" href="css/areaSection.css">
+    <link rel="stylesheet" href="css/tabs.css">
     <link rel="stylesheet" href="css/standardSection.css">
     <link rel="stylesheet" href="css/aboutSection.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -32,8 +32,8 @@
 </head>
 
 <body class="hidden">
-<!-- Loader -->
-<div id="loader"></div>
+    <!-- Loader -->
+    <div id="loader"></div>
 
     <section class="header">
         <!--Navbar-->
@@ -230,7 +230,7 @@
 
 
     <!-- Áreas de desarrollo -->
-    <section class="areas" id="areas">
+    <!-- <section class="areas" id="areas">
         <div class="d-flex flex-column">
             <div class="container-fluid pt-5 text-center">
                 <h1 class="areatitle">Áreas</h1>
@@ -259,7 +259,7 @@
                     <div id="tabsJustifiedContent" class="tab-content shadow p-3 mb-3 bg-white rounded">
                         <div id="home1" class="tab-pane fade active show">
                             <div class="row pb-2">
-                                <div class="col-md-5 imgTab"><img src="img/web.png" class=" img-rounded">
+                                <div class="col-md-5 imgTab"><img src="img/web.png" class=" img-rounded img-fluid">
                                 </div>
                                 <div class="col-md-7">
                                     <p class="texttab">Sabemos que las soluciones web adecuadas brindarán resultados
@@ -279,8 +279,8 @@
                         </div>
                         <div id="profile1" class="tab-pane fade ">
                             <div class="row pb-2">
-                                <div class="col-md-5 imgTab"><img src="img/mobile.png" width="117" height="117"
-                                        class="img-rounded">
+                                <div class="col-md-5 imgTab"><img src="img/mobile.png"
+                                        class="img-rounded img-fluid">
                                 </div>
                                 <div class="col-md-7">
                                     <p class="texttab">El desarrollo de aplicaciones móviles (o simplemente desarrollo
@@ -299,7 +299,7 @@
                         </div>
                         <div id="messages1" class="tab-pane fade">
                             <div class="row pb-2">
-                                <div class="col-md-5 imgTab"><img src="img/product.png" class="img-rounded">
+                                <div class="col-md-5 imgTab"><img src="img/product.png" class="img-rounded img-fluid">
                                 </div>
                                 <div class="col-md-7">
                                     <p class="texttab">El diseño de productos es tan amplio que nos adaptamos a tus
@@ -318,6 +318,76 @@
 
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="areas">
+        <div class="container">
+            <h2 class="text-center pb-2">Áreas</h2>
+            <p class="texttitulo mb-4">Usamos las tecnologias más novedosas para proveer la mejor solución que responda
+                a
+                las
+                necesidades del
+                mercado.</p>
+            <div class="box">
+                <ul>
+                    <li id="webTab" class="active">
+                        <img src="img/webTab.png" alt="">
+                        <h4>Desarrollo Web</h4>
+                    </li>
+                    <li id="devTab">
+                        <img src="img/devTab.png" alt="">
+                        <h4>Desarrollo Móvil</h4>
+                    </li>
+                    <li id="proTab">
+                        <img src="img/proTab.png" alt="">
+                        <h4>Diseño de Productos</h4>
+                    </li>
+                </ul>
+                <div class="content">
+                    <div id="webTab-content" class="oculto active">
+                        <p class="texttab">Sabemos que las soluciones web adecuadas brindarán resultados
+                            para su
+                            negocio. Podemos ayudarte con una amplia gama de servicios para cualquier
+                            negocio o
+                            PYME. Ya sea que solo esté planeando su primer producto o una expansión;
+                            nosotros lo
+                            ayudaremos. Nuestros servicios son de extremo a extremo: ayudamos con
+                            consultoría,
+                            análisis de negocios, diseño y desarrollo.</p>
+                        <p class="textobjetivo text-center mt-4">Nuestro principal objetivo es el éxito de su
+                            negocio.
+                        </p>
+                    </div>
+                    <div id="devTab-content" class="oculto">
+                        <p class="texttab">El desarrollo de aplicaciones móviles (o simplemente desarrollo
+                            móvil) le proporciona una herramienta moderna y eficiente para trabajar no solo
+                            con
+                            sus clientes, sino también con los empleados de su propia empresa. Con una
+                            aplicación de este tipo, puede administrar fácilmente tanto la empresa como los
+                            empleados, porque las aplicaciones móviles permiten dar instrucciones, seguir
+                            las
+                            noticias, ver y enviar documentos, etc. </p>
+                        <p class="textobjetivo text-center mt-4">Nuestro principal objetivo es el éxito de su
+                            negocio.
+                        </p>
+                    </div>
+                    <div id="proTab-content" class="oculto">
+                        <p class="texttab">El diseño de productos es tan amplio que nos adaptamos a tus
+                            requerimientos y necesidades. Realizamos el servicio de diseño mecanico,
+                            modelado
+                            3D, programación de microcontroladores, IoT, diseño electrónico, impresion 3D
+                            (FDM/SLA), no solo contamos con el personal capacitado para el area de
+                            ingenieria
+                            sino tambien en el area de documentacion, gestion, consultoria de marcas,
+                            registros
+                            y patentes.</p>
+                        <p class="textobjetivo text-center mt-4">Nuestro principal objetivo es el éxito de su
+                            negocio.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -343,12 +413,9 @@
                 </div>
                 <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6">
                     <div class="row logos">
-                        <div class="col-4"><img src="img/Logo-iso 1.png" alt=""
-                                class="img-fluid"></div>
-                        <div class="col-4"><img src="img/CMMI_Logo 1.png" alt=""
-                                class="img-fluid"></div>
-                        <div class="col-4"><img src="img/logo-nyce 1.png" alt=""
-                                class="img-fluid"></div>
+                        <div class="col-4"><img src="img/Logo-iso 1.png" alt="" class="img-fluid"></div>
+                        <div class="col-4"><img src="img/CMMI_Logo 1.png" alt="" class="img-fluid"></div>
+                        <div class="col-4"><img src="img/logo-nyce 1.png" alt="" class="img-fluid"></div>
                     </div>
                 </div>
             </div>
@@ -363,8 +430,8 @@
     <section class="aboutUs container-fluid">
         <div class="d-flex flex-column">
             <h2 class="aboutTitle">Nosotros</h2>
-            <div class="row pt-2">
-                <div class="col-md-6 mx-auto" align="center"><img src="img/about.jpg" class="rounded img-fluid">
+            <div class="row pt-2 aboutRow">
+                <div class="col-md-6 mx-auto"><img src="img/about.jpg" class="rounded img-fluid">
                 </div>
                 <div class="col-md-6  colInfo">
                     <p class="aboutInfo">En DW Medios trabajamos en colaboración con usted. Nuestro equipo responde
@@ -418,14 +485,15 @@
                         <h6>Lunes a Viernes De 8:00 hrs a 18:00 hrs</h6>
                         <br>
                         <h4>Télefonos</h4>
-                        <a href="tel:+529999441159"><i class="fas fa-phone"> 999 944 1159</i></a>
+                        <a href="tel:+529999441159"><i class="fas fa-phone"></i> &nbsp;999 944 1159</a>
                         <br>
-                        <a href="https://wa.me/529993317117" target="_blank"><i class="fab fa-whatsapp"> 999 331
-                                7117</i></a>
+                        <a href="https://wa.me/529993317117" target="_blank"><i class="fab fa-whatsapp"></i> &nbsp;999
+                            331 7117</a>
                         <br>
                         <br>
                         <h4>Correo</h4>
-                        <a href="mailto:contactanos@dwmedios.com">contactanos@dwmedios.com</a>
+                        <a href="mailto:contactanos@dwmedios.com"><i class="far fa-envelope"></i>
+                            &nbsp;contactanos@dwmedios.com</a>
                         <br>
                         <br>
                         <h4>Redes Sociales</h4>
@@ -437,7 +505,7 @@
                         </ul>
                     </div>
                 </div>
-                <p class="text-center mt-4">&copy; 2020 DW Medios - Todos los derechos reservados.</p>
+                <p class="text-center mt-4"> Copyright &copy; 2020 DW MEDIOS S.A. DE C.V | Aviso de Privacidad</p>
             </div>
         </div>
     </footer>
@@ -453,15 +521,25 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/js/mdb.min.js">
     </script>
-<script src="js/preloader.js"></script>
+    <script src="js/preloader.js"></script>
     <!-- Cambio de color navbar scroll -->
     <script src="js/navbar.js"></script>
     <script src="js/mainSection.js"></script>
     <script src="js/typed.js"></script>
+    <!-- Tabs -->
     <script>
-        $('.aboutUs').mousemove(function (e) {
-            var moveX = (e.pageX * -.5 / 12);
-            var moveY = (e.pageY * -.5 / 12);
+        $(document).ready(function () {
+            $(".box").on("click", "li", function () {
+                var tabsId = $(this).attr("id");
+                $(this).addClass("active").siblings().removeClass("active");
+                $("#" + tabsId + "-content").addClass("active").siblings().removeClass("active");
+            })
+        })
+    </script>
+    <script>
+        $('.aboutRow').mousemove(function (e) {
+            var moveX = (e.pageX * 1 / 100);
+            var moveY = (e.pageY * 1 / 100);
             $(this).css('background-position', moveX + 'px ' + moveY + 'px')
         })
     </script>
