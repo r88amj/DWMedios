@@ -53,7 +53,7 @@
 }
 
 .box ul li.active {
-    border-bottom: 1px solid red !important;
+    border-bottom: 3px solid rgb(211, 44, 52) !important;
 }
 
 .content {
@@ -134,6 +134,8 @@
 .areas h2{
     font-size: 48px;
 }
+
+
 }
 
 @media (max-width:455px){
