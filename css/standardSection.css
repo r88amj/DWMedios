@@ -19,8 +19,10 @@
   line-height: 37px;
   color: #000000;
   text-align: right;
+
   }
-  
+
+ 
   .standard-sub{
       font-style: normal;
   font-weight: bold;
@@ -34,12 +36,15 @@
   }
   
   .middle{
-      border-left:     1px solid #000000;
+      border-right:3px solid #000000;
   }
 
-  .cmmi, .iso, .nyce{
-      display: table-cell;
-      vertical-align: middle;
+
+
+  .logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   @media only screen and (max-width:1200px){
@@ -52,6 +57,11 @@
     }
   }
 
+  @media only screen and (max-width:991px){
+    .middle{
+      border-right: none !important;
+  }
+  }
 
   @media only screen and (max-width:987px){
     .standard-sub{
@@ -62,6 +72,8 @@
     text-align: center;
     }
   }
+
+
   
 
   @media only screen and (max-width:780px){
@@ -87,7 +99,16 @@
     line-height: 27px;
     color: #000000;
     text-align: right;
+
     }
+
+  }
+
+
+  @media only screen and (max-width:580px){
+    .standard-title{
+  font-size: 30px;
+  }
   }
   
   

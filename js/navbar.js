@@ -42,4 +42,23 @@ $(".dropdown-item").on("click", function () {
     $(".navbar-collapse").collapse("hide");
 });
 
+// Cerrar navbar collapse con click fuera
+$(document).ready(function () {
+    $(document).click(function (event) {
+        var clickover = $(event.target);
+        var _opened = $(".navbar-collapse").hasClass("show");
+        if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+            $(".navbar-toggler").click();
+        }
+    });
+});
+// cambio de pill en tabs on hover seccion areas
+$(".box ul li").hover(function(){
+    $(this).trigger('click');
+    });
 
+
+    // cambio de pill en tabs on hover seccion proyectos
+$(".projectsBox ul li").hover(function(){
+    $(this).trigger('click');
+    });

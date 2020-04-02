@@ -16,6 +16,8 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/css/mdb.min.css" rel="stylesheet" />
+    <!-- Responsive Tabs -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/responsive-tabs@1.6.3/css/responsive-tabs.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/preloader.css">
     <link rel="stylesheet" href="css/index.css">
@@ -25,10 +27,11 @@
     <link rel="stylesheet" href="css/standardSection.css">
     <link rel="stylesheet" href="css/aboutSection.css">
     <link rel="stylesheet" href="css/footer.css">
-
+    <link rel="stylesheet" href="css/contactSection.css">
+    <link rel="stylesheet" href="css/modalSection.css">
+    <link rel="stylesheet" href="css/projectSection.css">
     <!-- Icono -->
-    <link rel="icon" type="image/png"
-        href="https://upload.wikimedia.org/wikipedia/commons/6/61/Red_Silhouette_-_Gear_and_Tools.svg" />
+    <link rel="icon" href="img/Vector.svg">
 </head>
 
 <body class="hidden">
@@ -52,7 +55,7 @@
                 <!-- Links -->
                 <ul class="navbar-nav ml-auto">
                     <!-- Dropdown -->
-                    <li class="dropdown mega-dropdown nav-item">
+                    <li class="dropdown mega-dropdown nav-item hoverBottom">
                         <a class="nav-link" id="dropdown02" href="#" data-toggle="dropdown">Áreas <img
                                 src="img/pred.png" class="polygon" width="10" height="10" alt="">
                         </a>
@@ -144,25 +147,26 @@
                         </div>
                     </li>
                     <ul class="hiddenmega">
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Desarrollo Web</a>
+                        <li class="nav-item hoverBottom">
+                            <a href="#areas" class="nav-link">Desarrollo Web</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Desarrollo Móvil</a>
+                        <li class="nav-item hoverBottom">
+                            <a href="#areas" class="nav-link">Desarrollo Móvil</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Diseño de Productos</a>
+                        <li class="nav-item hoverBottom">
+                            <a href="#areas" class="nav-link">Diseño de Productos</a>
                         </li>
                     </ul>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Proyectos</a>
+                    <li class="nav-item hoverBottom">
+                        <a class="nav-link" href="#projects">Proyectos</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">Nosotros</a>
+                    <li class="nav-item hoverBottom">
+                        <a class="nav-link" href="#aboutUs">Nosotros</a>
                     </li>
                     <li class="nav-item">
                         <div class="estimation">
-                            <a class="button button-red" id="btnred" href="#">Contáctanos</a>
+                            <a class="button button-red" id="btnred" data-toggle="modal"
+                                href="#modalContact">Contáctanos</a>
                         </div>
                     </li>
                 </ul>
@@ -173,6 +177,46 @@
         </div>
         <!-- Navbar -->
     </section>
+
+
+    <!-- Modal de contacto -->
+    <div class="container-fluid">
+        <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" id="modalContact">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title">Estamos ansiosos de trabajar juntos...</h1>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><img src="img/quit.png" alt=""></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex flex-column">
+                            <div class="row modalInfo">
+                                <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
+                                    <img src="img/customer-service.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 borderModal">
+                                    <h3>Solo déjanos tu correo... </h3>
+                                    <form class="form" id="modalForm" method="POST" action="php/modal.php">
+                                        <div class="form-group">
+                                            <input type="email" name="emailModal" class="form-control"
+                                                required="required" id="formModal" aria-describedby="emailHelp"
+                                                placeholder="Correo Electrónico">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary" id="send">Enviar</button>
+                                    </form>
+                                    <h2>¡GRACIAS!</h2>
+                                    <h4>...nos contactaremos lo más pronto posible.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Main -->
@@ -186,7 +230,7 @@
                                     data-words='["ideas", "equipos", "experiencia", "tecnología", "innovación"]'></span><br>
                                 para una solución<br>
                                 exitosa.</p>
-                            <a href="#about" class="btn btn-danger float-right">Contáctanos</a>
+                            <a href="#contact" class="btn btn-danger float-right">Contáctanos</a>
                             <img class="info-img img-fluid" src="img/Group.png" alt="">
                         </div>
                     </div>
@@ -200,7 +244,7 @@
                                 <img src="img/web.png" class="img-fluid" alt="">
                                 <h5>Desarrollo Web</h5>
                                 <div class="btnsuccess">
-                                    <a href="" class="btn btn-success">conoce más</a>
+                                    <a href="#webTab" class="btn btn-success">conoce más</a>
                                 </div>
                             </div>
                         </div>
@@ -209,7 +253,7 @@
                                 <img src="img/mobile.png" alt="" class="img-fluid">
                                 <h5>Desarrollo Móvil</h5>
                                 <div class="btnsuccess">
-                                    <a href="" class="btn btn-success">conoce más</a>
+                                    <a href="#devTab" class="btn btn-success">conoce más</a>
                                 </div>
                             </div>
                         </div>
@@ -218,7 +262,7 @@
                                 <img src="img/product.png" alt="" class="img-fluid">
                                 <h5>Diseño de Productos</h5>
                                 <div class="btnsuccess">
-                                    <a href="" class="btn btn-success">conoce más</a>
+                                    <a href="#proTab" class="btn btn-success">conoce más</a>
                                 </div>
                             </div>
                         </div>
@@ -229,105 +273,11 @@
     </section>
 
 
-    <!-- Áreas de desarrollo -->
-    <!-- <section class="areas" id="areas">
-        <div class="d-flex flex-column">
-            <div class="container-fluid pt-5 text-center">
-                <h1 class="areatitle">Áreas</h1>
-                <p class="texttitulo">Usamos las tecnologias más novedosas para proveer la mejor solución que responda a
-                    las
-                    necesidades del
-                    mercado.</p>
-                <div class="container">
-                    <ul id="tabsJustified" class="nav nav-tabs nav-fill">
-                        <li class="nav-item"><a href="" data-target="#home1" data-toggle="tab"
-                                class="nav-link tab-title text-uppercase active  text-center"><img src="img/web.png"
-                                    alt=""><br><br>
-                                Desarrollo
-                                Web</a></li>
-                        <li class="nav-item"><a href="" data-target="#profile1" data-toggle="tab"
-                                class="nav-link tab-title text-uppercase text-center"><img src="img/mobile.png"
-                                    alt=""><br><br> Desarrollo
-                                Móvil</a></li>
-                        <li class="nav-item"><a href="" data-target="#messages1" data-toggle="tab"
-                                class="nav-link tab-title text-uppercase text-center"><img src="img/product.png"
-                                    alt=""><br><br> Desarrollo
-                                de
-                                Productos</a></li>
-                    </ul>
-                    <br>
-                    <div id="tabsJustifiedContent" class="tab-content shadow p-3 mb-3 bg-white rounded">
-                        <div id="home1" class="tab-pane fade active show">
-                            <div class="row pb-2">
-                                <div class="col-md-5 imgTab"><img src="img/web.png" class=" img-rounded img-fluid">
-                                </div>
-                                <div class="col-md-7">
-                                    <p class="texttab">Sabemos que las soluciones web adecuadas brindarán resultados
-                                        para su
-                                        negocio. Podemos ayudarte con una amplia gama de servicios para cualquier
-                                        negocio o
-                                        PYME. Ya sea que solo esté planeando su primer producto o una expansion;
-                                        nosotros lo
-                                        ayudaremos. Nuestros servicios son de extremo a extremo: ayudamos con
-                                        consultoría,
-                                        análisis de negocios, diseño y desarrollo.</p>
-                                    <p class="textobjetivo text-center">Nuestro principal objetivo es el éxito de su
-                                        negocio.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="profile1" class="tab-pane fade ">
-                            <div class="row pb-2">
-                                <div class="col-md-5 imgTab"><img src="img/mobile.png"
-                                        class="img-rounded img-fluid">
-                                </div>
-                                <div class="col-md-7">
-                                    <p class="texttab">El desarrollo de aplicaciones móviles (o simplemente desarrollo
-                                        móvil) le proporciona una herramienta moderna y eficiente para trabajar no solo
-                                        con
-                                        sus clientes, sino también con los empleados de su propia empresa. Con una
-                                        aplicación de este tipo, puede administrar fácilmente tanto la empresa como los
-                                        empleados, porque las aplicaciones móviles permiten dar instrucciones, seguir
-                                        las
-                                        noticias, ver y enviar documentos, etc. </p>
-                                    <p class="textobjetivo text-center">Nuestro principal objetivo es el éxito de su
-                                        negocio.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="messages1" class="tab-pane fade">
-                            <div class="row pb-2">
-                                <div class="col-md-5 imgTab"><img src="img/product.png" class="img-rounded img-fluid">
-                                </div>
-                                <div class="col-md-7">
-                                    <p class="texttab">El diseño de productos es tan amplio que nos adaptamos a tus
-                                        requerimientos y necesidades. Realizamos el servicio de diseño mecanico,
-                                        modelado
-                                        3D, programación de microcontroladores, IoT, diseño electrónico, impresion 3D
-                                        (FDM/SLA), no solo contamos con el personal capacitado para el area de
-                                        ingenieria
-                                        sino tambien en el area de documentacion, gestion, consultoria de marcas,
-                                        registros
-                                        y patentes.</p>
-                                    <p class="textobjetivo text-center">Nuestro principal objetivo es el éxito de su
-                                        negocio.
-                                    </p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <section class="areas">
+    <!-- Seccion Areas de desarrollo -->
+    <section class="areas" id="areas">
         <div class="container">
             <h2 class="text-center pb-2">Áreas</h2>
-            <p class="texttitulo mb-4">Usamos las tecnologias más novedosas para proveer la mejor solución que responda
+            <p class="texttitulo mb-4">Usamos las tecnologías más novedosas para proveer la mejor solución que responda
                 a
                 las
                 necesidades del
@@ -400,38 +350,150 @@
     <!-- Standard -->
     <section class="standard container-fluid">
         <div class="d-flex flex-column">
-            <h1 class="standard-title text-center">
-                Cumpliendo Estandares Internacionales
-            </h1>
-            <div class="row">
-                <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <p class="standard-info text-right">
-                        Utilizamos las tecnologías más modernas para proporcionar una experiencia de ingeniería de
-                        software de primer nivel. Nuestras soluciones reaccionan y responden a las necesidades modernas
-                        del mercado y proporcionan una excelente representación del servicio de calidad.
-                    </p>
-                </div>
-                <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <div class="row logos">
-                        <div class="col-4"><img src="img/Logo-iso 1.png" alt="" class="img-fluid"></div>
-                        <div class="col-4"><img src="img/CMMI_Logo 1.png" alt="" class="img-fluid"></div>
-                        <div class="col-4"><img src="img/logo-nyce 1.png" alt="" class="img-fluid"></div>
+            <div class="container">
+                <h1 class="standard-title text-center">
+                    Cumpliendo Estándares Internacionales
+                </h1>
+                <div class="row">
+                    <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 middle">
+                        <p class="standard-info text-right">
+                            Utilizamos las tecnologías más modernas para proporcionar una experiencia de ingeniería de
+                            software de primer nivel. Nuestras soluciones reaccionan y responden a las necesidades
+                            modernas
+                            del mercado y proporcionan una excelente representación del servicio de calidad.
+                        </p>
+                    </div>
+                    <!-- <div class="col-md-1 col-lg-1 middle"></div> -->
+                    <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                        <div class="row logos">
+                            <div class="col-4"><img src="img/Logo-iso 1.png" alt="" class="img-fluid"></div>
+                            <div class="col-4"><img src="img/CMMI_Logo 1.png" alt="" class="img-fluid"></div>
+                            <div class="col-4"><img src="img/logo-nyce 1.png" alt="" class="img-fluid"></div>
+                        </div>
                     </div>
                 </div>
+                <p class="standard-sub text-center">¡Ofrecemos resultados de alto impacto basados ​​en metodologías
+                    exitosas!
+                </p>
             </div>
-            <p class="standard-sub text-center">¡Ofrecemos resultados de alto impacto basados ​​en metodologías
-                exitosas!
-            </p>
+
         </div>
     </section>
 
 
+   <!-- Seccion proyectos -->
+   <section class="projects" id="projects">
+    <div class="container">
+        <h2 class="text-center pb-2">Proyectos</h2>
+        <div class="projectsBox">
+            <ul>
+                <li id="webProjects" class="active">
+                    <img src="img/webTab-80.png" alt="">
+                </li>
+                <li id="devProjects">
+                    <img src="img/devTab-80.png" alt="">
+                </li>
+                <li id="proProjects">
+                    <img src="img/proTab-80.png" alt="">
+                </li>
+            </ul>
+            <div class="content">
+                <div id="webProjects-content" class="ocultos active">
+                    <div id="carouselWeb" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <!-- <div class="card mb-3"> -->
+                                    <div class="row no-gutters">
+                                        <div class="col-12 col-xs-12 col-md-6 col-lg-6 col-xl-6 left">
+                                            <img src="img/angel.png" class="card-img img-fluid" alt="...">
+                                        </div>
+                                        <div class="col-12 col-xs-12 col-md-6 col-lg-6 col-xl-6 right">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Angel Bracelet</h5>
+                                                <p class="card-text">Smartwatch que permite ser una herramienta
+                                                    para
+                                                    personas con Epilepsia, como método de alerta inmediata al
+                                                    sufrir un
+                                                    episodio. Así mismo lleva un historial de la actividad
+                                                    física del
+                                                    usuario para un monitoreo integral.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!-- </div> -->
+                            </div>
+                            <div class="carousel-item">
+                                <!-- <div class="card mb-3"> -->
+                                    <div class="row no-gutters">
+                                        <div class="col-12 col-xs-12 col-md-6 col-lg-6 col-xl-6 left">
+                                            <img src="img/angel.png" class="card-img img-fluid" alt="...">
+                                        </div>
+                                        <div class="col-12 col-xs-12 col-md-6 col-lg-6 col-xl-6 right">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Angel Bracelet</h5>
+                                                <p class="card-text">Smartwatch que permite ser una herramienta
+                                                    para
+                                                    personas con Epilepsia, como método de alerta inmediata al
+                                                    sufrir un
+                                                    episodio. Así mismo lleva un historial de la actividad
+                                                    física del
+                                                    usuario para un monitoreo integral.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!-- </div> -->
+                            </div>
+                            <div class="carousel-item">
+                                <!-- <div class="card mb-3"> -->
+                                    <div class="row no-gutters">
+                                        <div class="col-12 col-xs-12 col-md-6 col-lg-6 col-xl-6 left">
+                                            <img src="img/angel.png" class="card-img img-fluid" alt="...">
+                                        </div>
+                                        <div class="col-12 col-xs-12 col-md-6 col-lg-6 col-xl-6 right">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Angel Bracelet</h5>
+                                                <p class="card-text">Smartwatch que permite ser una herramienta
+                                                    para
+                                                    personas con Epilepsia, como método de alerta inmediata al
+                                                    sufrir un
+                                                    episodio. Así mismo lleva un historial de la actividad
+                                                    física del
+                                                    usuario para un monitoreo integral.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselWeb" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselWeb" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div id="devProjects-content" class="ocultos">
+                   <h1>Demo Content 2</h1>
+                </div>
+                <div id="proProjects-content" class="ocultos">
+                   <h1>Demo Content 3</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
     <!-- Seccion Nosotros -->
-    <section class="aboutUs container-fluid">
+    <section class="aboutUs container-fluid" id="aboutUs">
         <div class="d-flex flex-column">
             <h2 class="aboutTitle">Nosotros</h2>
             <div class="row pt-2 aboutRow">
-                <div class="col-md-6 mx-auto"><img src="img/about.jpg" class="rounded img-fluid">
+                <div class="col-md-6 imgAbout"><img src="img/about.jpg" class="rounded img-fluid">
                 </div>
                 <div class="col-md-6  colInfo">
                     <p class="aboutInfo">En DW Medios trabajamos en colaboración con usted. Nuestro equipo responde
@@ -444,15 +506,29 @@
         </div>
     </section>
 
+
+
+
     <!-- Seccion Contacto -->
-    <!-- <section class="contact">
-        <div class="container">
-            <h1 class="text-center">¿Listo para empezar?</h1>
-
-
+    <section class="contact" id="contact">
+        <div class="container text-center">
+            <h1>¿Listo para empezar?</h1>
+            <div class="d-flex flex-column ">
+                <form class="form-inline" id="formulario" method="POST" action="php/correo.php">
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control mail-field" required="required"
+                            id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo Electrónico">
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="enviar">Enviar</button>
+                </form>
+            </div>
         </div>
-    </section> -->
+    </section>
 
+
+
+
+    <!-- Footer -->
     <footer>
         <div class="mt-5 pt-5 pb-5 footer">
             <div class="container">
@@ -521,11 +597,17 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/js/mdb.min.js">
     </script>
+    <!-- Responsive Tabs -->
+    <script src="https://cdn.jsdelivr.net/npm/responsive-tabs@1.6.3/js/jquery.responsiveTabs.min.js"></script>
+    <!-- Custom JS -->
     <script src="js/preloader.js"></script>
     <!-- Cambio de color navbar scroll -->
     <script src="js/navbar.js"></script>
     <script src="js/mainSection.js"></script>
     <script src="js/typed.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/dropdownLayer.js"></script>
+    <script src="js/projectsSection.js"></script>
     <!-- Tabs -->
     <script>
         $(document).ready(function () {
@@ -536,10 +618,19 @@
             })
         })
     </script>
+      <script>
+        $(document).ready(function () {
+            $(".projectsBox").on("click", "li", function () {
+                var tabsId = $(this).attr("id");
+                $(this).addClass("active").siblings().removeClass("active");
+                $("#" + tabsId + "-content").addClass("active").siblings().removeClass("active");
+            })
+        })
+    </script>
     <script>
         $('.aboutRow').mousemove(function (e) {
-            var moveX = (e.pageX * 1 / 100);
-            var moveY = (e.pageY * 1 / 100);
+            var moveX = (e.pageX * 1 / 250);
+            var moveY = (e.pageY * 1 / 250);
             $(this).css('background-position', moveX + 'px ' + moveY + 'px')
         })
     </script>

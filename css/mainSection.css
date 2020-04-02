@@ -1,24 +1,25 @@
-.main{
+.main {
     padding: 0;
     margin: 0;
     height: 970px;
 }
 
-.leftside, .rightside{
+.leftside,
+.rightside {
     height: 970px;
 }
 
 
-.main p{
+.main p {
     margin-top: 100px;
     font-style: normal;
     font-weight: bold;
     font-size: 52px;
-    line-height: 50px;  
+    line-height: 50px;
     color: #000000;
 }
 
-.rightside{
+.rightside {
     display: flex;
 }
 
@@ -31,25 +32,25 @@
     border-radius: 0;
 }
 
-.first{
+.first {
     background: #CA262B;
-     margin: 0;
+    margin: 0;
     padding: 0;
     vertical-align: middle;
     display: table-cell;
 }
 
-.second{
-    background:  #D35D69;
-     margin: 0;
+.second {
+    background: #D35D69;
+    margin: 0;
     padding: 0;
     vertical-align: middle;
     display: table-cell;
 }
 
-.third{
-    background:  #7CA2B2;
-     margin: 0;
+.third {
+    background: #7CA2B2;
+    margin: 0;
     padding: 0;
     vertical-align: middle;
     display: table-cell;
@@ -62,7 +63,6 @@
     color: white;
     font-size: 30px;
     text-shadow: 1px 1px 2px black
-
 }
 
 a.btn.btn-danger {
@@ -121,8 +121,8 @@ a.btn.btn-success:hover {
 
 
 
-@media screen and (max-width:1199px){
-    .rightside{
+@media screen and (max-width:1199px) {
+    .rightside {
         display: block;
     }
 
@@ -134,25 +134,25 @@ a.btn.btn-success:hover {
         margin: 0;
         border-radius: 0;
     }
-   
-}
-@media screen and (max-width:1199px){
-    .main{
+
+    .main {
         height: 100%;
     }
 
-    .leftside, .rightside{
+    .leftside,
+    .rightside {
         height: 100%;
     }
+
 }
 
 
-@media screen and (max-width:720px){
-    .main p{
-     
+@media screen and (max-width:720px) {
+    .main p {
+
         font-size: 40px;
-        line-height: 40px;  
-    
+        line-height: 40px;
+
     }
 
     a.btn.btn-danger {
@@ -166,12 +166,12 @@ a.btn.btn-success:hover {
         font-size: 16px;
     }
 
-    
+
 }
 
-@media screen and (max-width:767px){
+@media screen and (max-width:767px) {
     /* Seccion Áreas */
-  
+
     .areatitle {
         font-weight: 12px !important;
     }
@@ -206,15 +206,15 @@ a.btn.btn-success:hover {
     .textobjetivo {
         font-size: 15px !important;
     }
-    
+
 }
 
-@media screen and (max-width:600px){
-    .main p{
-     
+@media screen and (max-width:600px) {
+    .main p {
+
         font-size: 30px;
-        line-height: 40px;  
-    
+        line-height: 40px;
+
     }
 
     a.btn.btn-danger {
@@ -227,15 +227,15 @@ a.btn.btn-success:hover {
         border-radius: 47px;
         font-size: 14px;
     }
-    
+
 }
 
-@media screen and (max-width:480px){
-    .main p{
-     
+@media screen and (max-width:480px) {
+    .main p {
+
         font-size: 25px;
-        line-height: 40px;  
-    
+        line-height: 40px;
+
     }
 
     a.btn.btn-danger {
@@ -248,10 +248,12 @@ a.btn.btn-success:hover {
         border-radius: 47px;
         font-size: 14px;
     }
+
     .navbg .navbar-nav li a {
         font-weight: 600;
         font-size: 10px;
     }
+
     .rightside h5 {
         font-size: 12px;
     }
@@ -263,13 +265,14 @@ a.btn.btn-success:hover {
     }
 
     .second img {
-        height: 80px;
+        height: 50px;
         width: 50px;
     }
 
     .info-main {
         height: 20vh;
     }
+
     /* Seccion Áreas */
 
     .areatitle {
@@ -308,12 +311,12 @@ a.btn.btn-success:hover {
     }
 }
 
-@media screen and (max-width:350px){
-    .main p{
-     
+@media screen and (max-width:350px) {
+    .main p {
+
         font-size: 20px;
-        line-height: 40px;  
-    
+        line-height: 40px;
+
     }
 
     a.btn.btn-danger {
@@ -326,7 +329,7 @@ a.btn.btn-success:hover {
         border-radius: 47px;
         font-size: 12px;
     }
-    
+
     .navbg .navbar-nav li a {
         font-weight: 600;
         font-size: 10px;
@@ -343,7 +346,7 @@ a.btn.btn-success:hover {
     }
 
     .second img {
-        height: 80px;
+        height: 50px;
         width: 50px;
     }
 
@@ -351,6 +354,41 @@ a.btn.btn-success:hover {
         height: 20vh;
     }
 
-    
+
 }
 
+
+
+@media screen and (max-width:767px) {
+    .first img {
+        width: 80px;
+        height: 62px;
+    }
+
+    .third img {
+        width: 80px;
+        height: 62px;
+    }
+
+    .second img {
+        width: 62px;
+        height: 62px;
+    }
+
+    .contenido h5 {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    .contenido h5 {
+        font-size: 20px;
+    }
+
+    .second img{
+        width: 117px;
+        height: 117px;
+    }
+
+}

@@ -1,0 +1,179 @@
+.contact {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contact h1 {
+    font-weight: bold;
+    font-size: 72px;
+    color: #000000;
+}
+
+#formulario {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#exampleInputEmail1 {
+    width: 818px;
+    height: 90px;
+    background: #FFC543;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    font-size: 36px;
+    color: #FFFFFF;
+    padding-left: 60px;
+}
+
+#exampleInputEmail1::placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color: rgba(255, 255, 255, 0.741);
+}
+
+#enviar {
+    width: 250px;
+    height: 90px;
+    background: #69E781 !important;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 45px;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width:1199px){
+    .contact h1 {
+        font-weight: bold;
+        font-size: 50px;
+        color: #000000;
+    }
+
+    #exampleInputEmail1 {
+        width: 500px;
+        height: 82px;
+        border-radius: 30px;
+        font-size: 24px;
+        color: #FFFFFF;
+        padding-left: 40px;
+    }
+
+    #exampleInputEmail1::placeholder {
+        font-size: 24px;
+       }
+
+    #enviar {
+        width: 150px;
+        height: 90px;
+        background: #69E781 !important;
+        border-radius: 30px;
+        font-weight: bold;
+        font-size: 24px;
+        color: #FFFFFF;
+    }
+}
+
+
+@media screen and (max-width:767px){
+    .contact h1 {
+        font-weight: bold;
+        font-size: 45px;
+        color: #000000;
+    }
+
+    #exampleInputEmail1 {
+        width: 340px;
+        height: 72px;
+        border-radius: 30px;
+        font-size: 18px;
+        color: #FFFFFF;
+        padding-left: 40px;
+    }
+
+    #exampleInputEmail1::placeholder {
+        font-size: 18px;
+       }
+
+    #enviar {
+        width: 150px;
+        height: 72px;
+        background: #69E781 !important;
+        border-radius: 30px;
+        font-size: 18px;
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (max-width:575px){
+    .contact h1 {
+        font-weight: bold;
+        font-size: 45px;
+        color: #000000;
+    }
+
+    #exampleInputEmail1 {
+        width: 400px;
+        height: 72px;
+        border-radius: 30px;
+        font-size: 18px;
+        color: #FFFFFF;
+        padding-left: 30px;
+    }
+
+    #exampleInputEmail1::placeholder {
+        font-size: 18px;
+       }
+
+    #enviar {
+        width: 150px;
+        height: 72px;
+        background: #69E781 !important;
+        border-radius: 30px;
+        font-size: 18px;
+        color: #FFFFFF;
+    }
+
+    #formulario{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:436px){
+    .contact h1 {
+        font-size: 30px !important;
+    }
+
+    #exampleInputEmail1 {
+        width: 300px;
+        height: 60px;
+        border-radius: 30px;
+        font-size: 18px;
+        color: #FFFFFF;
+        padding-left: 40px;
+    }
+
+    #exampleInputEmail1::placeholder {
+        font-size: 18px;
+       }
+
+    #enviar {
+        width: 150px;
+        height: 60px;
+        background: #69E781 !important;
+        border-radius: 30px;
+        font-size: 18px;
+        color: #FFFFFF;
+    }
+
+    #formulario{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
