@@ -1,71 +1,210 @@
-.aboutRow {
-    background: url('../img/about.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-   width: 100%;
-   height: 100%;
-   /* margin-bottom: 50px; */
-   position: relative;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   padding: 30px;
+.aboutUs {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-top: 20px;
 }
+
 
 
 .aboutTitle {
     font-weight: bold;
-    font-size: 72px;
-    line-height: 110px;
+    font-size: 30px;
+    line-height: 35px;
     color: #000000;
     margin-left: 5%;
 }
 
 .aboutInfo {
     font-weight: 300;
-    font-size: 16px;
-    line-height: 37px;
+    font-size: 15px;
+    line-height: 25px;
     color: #000000;
-    border-left: 1px solid black;
-    padding-left: 30px;
+    text-align: justify;
+    /* border-left: 3px solid black; */
+}
+
+.colInfo {
+    padding: 20px;
 }
 
 
-.imgAbout{
+
+.imgAbout img {
+    border-radius: 15px !important;
+
+}
+
+
+/************************* Modal ****************************/
+.btnModal {
+    background: #D35D69 !important;
+    border-radius: 20px;
+    box-shadow: 2px 2px black;
+    font-size: 20px;
+}
+
+.btnModal:hover {
+    background: white !important;
+    border-radius: 20px;
+    box-shadow: 2px 2px black;
+    border: 2px solid #D35D69 !important;
+    color: #D35D69 !important;
+}
+
+.modaldw {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
-.imgAbout img{
-    border-radius: 30px !important;
+.modaldw .modal-content {
+    background: white;
+}
+
+#dwmedios-tabContent::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+}
+
+/* Track */
+#dwmedios-tabContent::-webkit-scrollbar-track {
+    background: #dcd5d5;
+    border-radius: 10px;
+}
+
+/* Handle */
+#dwmedios-tabContent::-webkit-scrollbar-thumb {
+    background: #FFC543;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+#dwmedios-tabContent::-webkit-scrollbar-thumb:hover {
+    background: rgb(198, 150, 49);
+}
+
+
+.modaldw a.active {
+    background: transparent !important;
+    color: black !important;
+    text-align: center;
+    text-decoration: underline
+}
+
+.modaldw a {
+    color: #D35D69 !important;
+    font-size: 12px;
+    padding: 45px 3px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.modaldw .modal-title {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #D35D69 !important;
+    font-weight: bold;
+    margin-left: 5%;
+}
+
+
+
+
+@media screen and (min-width:768px) {
+    .aboutInfo {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25px;
+        color: #000000;
+        text-align: justify;
+        border-left: 1px solid black;
+        padding-left: 10px;
+    }
+
+    .modaldw a {
+        font-size: 15px;
+        padding: 40px 3px;
+    }
+
+    .modaldw .modal-title {
+        font-size: 20px;
+    }
+
+    .aboutUs{
+        background: url('../img/about.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        padding-top: 80px;
+    }
 
 }
 
-@media screen and (max-width:580px){
-    .aboutTitle {
-        font-size: 60px;
-    }
-
-    .aboutInfo{
-        font-size: 16px;
-        border-left: none;
-        text-align: center;
-    }
-
-    .imgAbout{
-        display: flex;
-        justify-content: center;
+@media screen and (min-width:1024px) {
+    .colInfo {
+        display: block;
         align-items: center;
+        justify-content: center;
     }
-    
+
+    .aboutTitle {
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 50px;
+        color: #000000;
+        margin-left: 5%;
+    }
+
+    .aboutInfo {
+        font-size: 22px;
+        line-height: 35px;
+    }
+
+    .aboutUs {
+        margin-bottom: 50px;
+    }
+
+    .modaldw a {
+        font-size: 17px;
+    }
+
+    .modaldw .modal-title {
+        font-size: 23px;
+    }
 }
 
-@media screen and (max-width:767px){
-    .aboutInfo{
-        border-left: none;
-        text-align: center;
+
+@media screen and (min-width:1440px) {
+    .colInfo {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .aboutTitle {
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 50px;
+        color: #000000;
+        margin-left: 12%;
+    }
+
+    .aboutInfo {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .aboutUs {
+        margin-bottom: 50px;
+    }
+
+    .modaldw a {
+        font-size: 20px;
+    }
+
+    .modaldw .modal-title {
+        font-size: 25px;
     }
 }
-
-

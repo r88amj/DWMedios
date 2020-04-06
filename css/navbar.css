@@ -1,27 +1,19 @@
-.navbg {
-    box-shadow: none;
-}
-
+/* Posiciona por sobre toda la pagina el navbar */
 #header {
-    position: relative;
-    z-index: 30;
+    position: absolute;
+    z-index: 10;
     width: 100%;
 }
 
-
-/* Redimensionar logo navbar */
-.navbar-brand img {
-    /* height: 2rem; */
-    margin-left: 50px;
-}
-
-/* Cambiar color navbar */
+/* Elimina la sombra del navbar */
 .navbg {
+    box-shadow: none;
     background: transparent !important;
-    padding: 20px 0;
+    padding: 15px 0;
     transition: all 0.5s ease-in-out;
 }
 
+/* Cambio de color navbar en hover */
 .navbg:hover {
     background: rgb(211, 44, 52) !important;
 }
@@ -30,45 +22,45 @@
     background: rgb(211, 44, 52) !important;
 }
 
+/* elimina los bordes del dropdown menu */
+.navbar .dropdown-menu {
+    border: none;
+    border-radius: 0 0 0 0 !important;
+}
+
+/* marge izquierdo del logo */
+.navbar-brand img {
+    margin-left: 20%;
+}
+
 /* Cambiar color links navbar */
 .navbg .navbar-nav li a {
     color: black !important;
     text-transform: uppercase;
-    font-weight: 600;
-    font-size: 20px;
 }
 
-.navbg:hover .navbar-nav li.hoverBottom a:hover {
-   border-bottom: 3px solid white;
-   text-shadow: 2px 2px black;
-}
-
-
- 
-
+/* cambio de color de los links en hover del navbar */
 .navbg:hover .navbar-nav li a {
     color: white !important;
-    text-transform: uppercase;
 }
 
+/* borde inferior de los links en hover */
+.navbg:hover .navbar-nav li.hoverBottom a:hover {
+    border-bottom: 3px solid white;
+    text-shadow: 2px 2px black;
+}
+
+/* cambio de color de los links en scroll */
 .navbg.scrolled .navbar-nav li a {
     color: white !important;
-    text-transform: uppercase;
 }
-
 
 /* Cambiar logo on hover */
 .navbg:hover .logo {
     content: url('../img/white.svg');
 }
 
-
-/* Cambiar color navbar-toggler */
-.dark-blue-text {
-    color: white !important;
-}
-
-
+/* Boton de contacto */
 #btnred {
     background: white;
     color: rgb(211, 44, 52) !important;
@@ -81,43 +73,67 @@
     transition: all 0.5s ease-in-out;
 }
 
+/* cambio de color en hover */
 #btnred:hover {
     background: rgb(211, 44, 52) !important;
     color: white !important;
 }
 
-li.nav-item .estimation {
-    margin-left: 100px;
-    margin-right: 70px;
+/* poligono*/
+.navbg .polygon{
+    transform: translateY(-3px);
+}
+/* poligono en blanco en scroll */
+.navbg.scrolled .polygon {
+    content: url('../img/Polygon-white.png');
+    transform: translateY(-3px);
+}
+
+/* poligono en blanco en hover */
+.navbg:hover .polygon {
+    content: url('../img/Polygon-white.png');
+    transform: translateY(-3px);
 }
 
 
 
+/* color de fondo en hover de los elementos del megamenu */
+.nav-link.dropdown-item.dropdown-submenu.waves-effect.waves-light:hover,
+.nav-link.waves-effect.waves-light.active:hover,
+.nav-link.waves-effect.waves-light.active {
+    background-color: rgba(245, 245, 245, 0.34);
+}
 
 
-@media (min-width:992px) {
+/* espacio entre el contenido y el contorno */
+#v-pills-tabContent {
+    padding: 0 30px;
+}
+
+
+
+@media screen and (min-width:992px) {
+    /* oculta el menu adiconal */
     .hiddenmega {
         display: none;
         list-style: none;
         text-align: center;
     }
 
+    /* oculta el boton de contacto */
     .navbg .estimation {
         visibility: hidden;
         opacity: 0;
     }
 
+    /* muestra en boton de contacto cuando se hace hover sobre el navbar */
     .navbg:hover .estimation {
         opacity: 1;
         visibility: initial;
     }
 
+    /* muestra en boton de contacto cuando se hace en la pagina */
     .navbg.scrolled .estimation {
-        visibility: initial;
-        opacity: 1;
-    }
-
-    .navbg.scrolled .estimation:hover {
         visibility: initial;
         opacity: 1;
     }
@@ -130,20 +146,8 @@ li.nav-item .estimation {
 
     /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
     .navbar .nav-item {
-        padding: 1rem 1rem;
+        padding: 1rem .6rem;
         margin: 0 .5rem;
-    }
-
-    .row.vdivide [class*='col-']:not(:last-child):after {
-        background: #e0e0e0;
-        width: 2px;
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        min-height: 70px;
     }
 
     /* makes the dropdown full width  */
@@ -163,138 +167,60 @@ li.nav-item .estimation {
         display: block !important;
     }
 
+    /* color de fondo del megamenu */
     .navbar .dropdown-menu {
-
-        background-color: #fff;
+        background-color: rgb(211, 44, 52) !important;
+        color: white !important;
     }
 
 }
 
 
-@media (max-width:991px) {
+@media screen and (max-width:991px) {
+    /* cambio de logo */
     .navbg .logo {
         content: url('../img/white.svg');
     }
- 
-    li.nav-item .estimation {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    
-    .navbg:hover .navbar-nav li.hoverBottom a:hover {
-        border-bottom: none;
-     }
-    
 
-    .navbg .navbar-nav li a {
-        color: white !important;
-    }
-
-
+    /* oculta el mega menu */
     li.dropdown {
         display: none !important;
     }
 
+    /* color del navbar */
     .navbg {
-        background-color: rgb(211, 44, 52) !important;
-    }
-
-    .navbar-collapse ul li {
-        display: block;
-        text-align: center;
-        font-size: 18px;
-    }
-
-
-    .navbg:hover #btnred {
-        background: white !important;
-        color: rgb(211, 44, 52) !important;
-        font-weight: 600;
-        letter-spacing: .1rem;
-        padding: .5rem 1rem;
-        text-transform: uppercase;
-    }
-
-    .navbg:hover #btnred:hover {
         background: rgb(211, 44, 52) !important;
+    }
+
+    /* color de los links del navbar */
+    .navbg .navbar-nav li a {
         color: white !important;
     }
 
+    /* Elimina el borde inferior de los links */
+    .navbg:hover .navbar-nav li.hoverBottom a:hover {
+        border-bottom: none;
+     }
 
-    .navbg #btnred {
-        background: white !important;
-        color: rgb(211, 44, 52) !important;
-        font-weight: 600;
-        letter-spacing: .1rem;
-        padding: .5rem 1rem;
-        text-transform: uppercase;
-    }
-
-
-    .estimation {
-        border: none;
-        font-size: 18px;
-        cursor: pointer;
+     /* centra los links */
+     .navbar-collapse ul li {
+        display: block;
         text-align: center;
     }
 
-    .navbg:hover .estimation {
-        border: none;
-        font-size: 18px;
-        cursor: pointer;
-        text-align: center;
+    
+}
+
+
+@media screen and (min-width:1440px){
+    .navbg .navbar-nav li a {
+       font-size: 20px;
     }
 
-    .navbg.scrolled .estimation {
-        border: none;
-        font-size: 18px;
-        cursor: pointer;
-        text-align: center;
+    #btnred {
+        margin-left: 100px;
+        margin-right: 60px;
     }
-
-
-    .navbar-brand img {
-        /* height: 2rem; */
-        margin-left: 20px !important;
-    }
-
 }
 
-
-
-.navbar .dropdown-menu div[class*="col"] {
-    margin-bottom: 1rem;
-
-}
-
-.navbar .dropdown-menu {
-    border: none;
-    border-radius: 0 0 0 0 !important;
-}
-
-
-.custom-pills a {
-    color: rgb(247, 247, 247) !important;
-
-}
-
-.nav-link.dropdown-item.dropdown-submenu.waves-effect.waves-light {
-    margin-left: 0;
-    padding-left: 0;
-}
-
-.nav-link.dropdown-item.dropdown-submenu.waves-effect.waves-light:hover,
-.nav-link.waves-effect.waves-light.active:hover,
-.nav-link.waves-effect.waves-light.active {
-    background-color: rgba(245, 245, 245, 0.34);
-}
-
-#v-pills-tabContent {
-    padding: 0 30px;
-}
-
-.navbar-nav>li>.dropdown-menu {
-    background-color: rgb(211, 44, 52) !important;
-    color: white !important;
-}
 
