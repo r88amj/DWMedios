@@ -896,21 +896,10 @@
     <script src="js/mainSection.js"></script>
     <script src="js/typed.js"></script>
     <script src="js/modal.js"></script>
-    <script src="js/dropdownLayer.js"></script>
-    <script src="js/projectsSection.js"></script>
     <!-- Tabs -->
     <script>
         $(document).ready(function () {
             $(".box").on("click", "li", function () {
-                var tabsId = $(this).attr("id");
-                $(this).addClass("active").siblings().removeClass("active");
-                $("#" + tabsId + "-content").addClass("active").siblings().removeClass("active");
-            })
-        })
-    </script>
-    <script>
-        $(document).ready(function () {
-            $(".projectsBox").on("click", "li", function () {
                 var tabsId = $(this).attr("id");
                 $(this).addClass("active").siblings().removeClass("active");
                 $("#" + tabsId + "-content").addClass("active").siblings().removeClass("active");
