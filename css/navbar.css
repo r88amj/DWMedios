@@ -37,6 +37,7 @@
 .navbg .navbar-nav li a {
     color: black !important;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 /* cambio de color de los links en hover del navbar */

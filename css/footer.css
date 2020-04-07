@@ -22,3 +22,13 @@
     margin: 0;
     padding: 0;
 }
+
+
+.socialIcons .fa-facebook:hover, .socialIcons .fa-instagram:hover{
+    color: #ED5353 !important;
+}
+
+a:hover{
+    cursor:pointer;
+    pointer-events: auto;
+}
