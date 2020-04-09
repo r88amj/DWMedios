@@ -225,3 +225,16 @@
 }
 
 
+@media screen and (min-width:1800px){
+    .navbg .navbar-nav li a {
+       font-size: 20px;
+    }
+
+    #btnred {
+        margin-left: 100px;
+        margin-right: 150px;
+    }
+}
+
+
+

@@ -32,6 +32,13 @@ $('#v-pills-tab a').hover(function(e) {
     $(this).tab('show')
 });
 
+
+// cambio de pill en tabs on hover aboutUs
+// $('#dwmedios-tab a.nav-link').hover(function(e) {
+//     e.preventDefault()
+//     $(this).tab('show')
+// });
+
  
 // ocultar menu desplegable cuando se da click en algun link
 $(".nav-link").on("click", function () {

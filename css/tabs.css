@@ -1,7 +1,8 @@
-.areas{
+.areas {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
 .areas h2 {
     font-style: normal;
     font-weight: bold;
@@ -25,7 +26,7 @@
 }
 
 /* Espaciado entre la card y los iconos */
-.box ul li img{
+.box ul li img {
     margin-top: 30px;
 }
 
@@ -37,7 +38,7 @@
     text-align: center;
     list-style: none;
     cursor: pointer;
-   
+
 }
 
 
@@ -140,26 +141,183 @@
     border: solid 2px #69E781;
 }
 
-/*************************************** Modal ********************************************/
-#modalProducts .modal-content {
-    background: #ED5353;
+/*************************************** Modal Web********************************************/
+#modalWeb .modal-content,
+#modalWeb .card {
+    background: white;
+    color:  rgb(80, 116, 132);
+    box-shadow: none;
+}
+
+#modalWeb .modal-title{
+    padding-left: 20px;
+}
+
+
+#modalWeb img {
+    width: 154px;
+    height: 195px;
+    margin-top: 20px;
+}
+
+#modalWeb .card-title {
+    font-weight: bold;
+    text-align: center;
+}
+
+#modalWeb .card-text {
+    text-align: justify;
+    color: rgb(80, 116, 132) !important;
+}
+
+#modalWeb .btnHyper {
+    background: #7CA2B2;
+    border-radius: 15px;
     color: white;
+    border: 2px solid #7CA2B2;
+}
+
+#modalWeb .btnHyper:hover {
+    background: rgb(243, 238, 238);
+    border-radius: 15px;
+    color: #7CA2B2;
+    border: 2px solid #7CA2B2;
+}
+
+
+#modalWeb .close img {
+    width: 50%;
+    height: 50%;
+}
+
+#modalWeb .modal-body::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+}
+
+/* Track */
+#modalWeb .modal-body::-webkit-scrollbar-track {
+    background: #dcd5d5;
+    border-radius: 10px;
+}
+
+/* Handle */
+#modalWeb .modal-body::-webkit-scrollbar-thumb {
+    background: #7CA2B2;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+#modalWeb .modal-body::-webkit-scrollbar-thumb:hover {
+    background: rgb(80, 116, 132);
+}
+
+.modal-header {
+    border: none;
+}
+
+/*************************************** Modal Dev********************************************/
+#modalDev .modal-content,
+#modalDev .card {
+    background: white;
+    color:  rgb(80, 116, 132);
+    box-shadow: none;
+}
+
+#modalDev .modal-title{
+    padding-left: 20px;
+}
+
+
+#modalDev img {
+    width: 154px;
+    height: 195px;
+    margin-top: 20px;
+}
+
+#modalDev .card-title {
+    font-weight: bold;
+    text-align: center;
+}
+
+#modalDev .card-text {
+    text-align: justify;
+    color: rgb(80, 116, 132) !important;
+}
+
+#modalDev .btnHyper {
+    background: #7CA2B2;
+    border-radius: 15px;
+    color: white;
+    border: 2px solid #7CA2B2;
+}
+
+#modalDev .btnHyper:hover {
+    background: rgb(243, 238, 238);
+    border-radius: 15px;
+    color: #7CA2B2;
+    border: 2px solid #7CA2B2;
+}
+
+
+#modalDev .close img {
+    width: 50%;
+    height: 50%;
+}
+
+#modalDev .modal-body::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+}
+
+/* Track */
+#modalDev .modal-body::-webkit-scrollbar-track {
+    background: #dcd5d5;
+    border-radius: 10px;
+}
+
+/* Handle */
+#modalDev .modal-body::-webkit-scrollbar-thumb {
+    background: #7CA2B2;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+#modalDev .modal-body::-webkit-scrollbar-thumb:hover {
+    background: rgb(80, 116, 132);
+}
+
+.modal-header {
+    border: none;
+}
+
+/*************************************** Modal Products********************************************/
+#modalProducts .modal-content,
+#modalProducts .card {
+    background: white;
+    color:  rgb(80, 116, 132);
+    box-shadow: none;
+}
+
+#modalProducts .modal-title{
+    padding-left: 20px;
 }
 
 
 #modalProducts img {
     width: 154px;
     height: 195px;
+    margin-top: 20px;
 }
 
 #modalProducts .card-title {
-    margin-top: 20px;
-    margin-bottom: 20px;
     font-weight: bold;
+    text-align: center;
 }
 
 #modalProducts .card-text {
     text-align: justify;
+    color: rgb(80, 116, 132) !important;
 }
 
 #modalProducts .btnHyper {
@@ -178,20 +336,40 @@
 
 
 
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
-    display: inline-block;
-    background: transparent no-repeat center center;
-    background-size: 100% 100%;
-    height: 100px !important;
-    width: 100px !important;
-    /* filter: invert(1); */
-}
-
 #modalProducts .close img {
     width: 50%;
     height: 50%;
 }
+
+#modalProducts .modal-body::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+}
+
+/* Track */
+#modalProducts .modal-body::-webkit-scrollbar-track {
+    background: #dcd5d5;
+    border-radius: 10px;
+}
+
+/* Handle */
+#modalProducts .modal-body::-webkit-scrollbar-thumb {
+    background: #7CA2B2;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+#modalProducts .modal-body::-webkit-scrollbar-thumb:hover {
+    background: rgb(80, 116, 132);
+}
+
+/* #modalProducts .modal-dialog,
+#modalProducts .modal-content {
+    height: 500px;
+} */
+
+
+
 
 
 
@@ -221,26 +399,72 @@
         font-size: 20px;
     }
 
-    #modalProducts .modalProduct {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+/* Web */
+#modalWeb .card-text {
+    text-align: left;
+    font-size: 15px;
+}
 
-    #modalProducts img {
-        padding-left: 20px;
-        padding-right: 0;
-    }
+#modalWeb h3{
+    text-align: center !important;
+    padding-top: 10px;
+}
 
-    #modalProducts .card-title {
-        text-align: left;
-    }
+#modalWeb .btn-link {
+    text-align: left;
+}
 
+
+
+#modalWeb .close img {
+    width: 60%;
+    height: 60%;
+}
+
+#modalWeb .modal-dialog,
+#modalWeb .modal-content {
+/* 80% of window height */
+height: 400px;
+}
+
+/* Móvil */
+#modalDev .card-text {
+    text-align: left;
+    font-size: 15px;
+}
+
+#modalDev h3{
+    text-align: center !important;
+    padding-top: 10px;
+}
+
+#modalDev .btn-link {
+    text-align: left;
+}
+
+
+
+#modalDev .close img {
+    width: 60%;
+    height: 60%;
+}
+
+#modalDev .modal-dialog,
+#modalDev .modal-content {
+/* 80% of window height */
+height: 400px;
+}
+
+
+/* Products */
     #modalProducts .card-text {
         text-align: left;
-        padding-left: 0;
-        padding-right: 20px;
         font-size: 15px;
+    }
+
+    #modalProducts h3{
+        text-align: center !important;
+        padding-top: 10px;
     }
 
     #modalProducts .btn-link {
@@ -248,7 +472,7 @@
     }
 
     .areas .content .btnWeb,
-.areas .content .btnDev,
+    .areas .content .btnDev,
     .areas .content .btnProducts {
         font-size: 15px;
         margin-top: 30px;
@@ -258,27 +482,32 @@
         width: 60%;
         height: 60%;
     }
+
+    #modalProducts .modal-dialog,
+#modalProducts .modal-content {
+    /* 80% of window height */
+    height: 400px;
+}
+
 }
 
 
 @media screen and (min-width:1024px) {
-    #modalProducts img {
-        width: 254px;
-        height: 295px;
-    }
-
-
+    #modalWeb .card-text,
+    #modalDev .card-text,
     #modalProducts .card-text {
-        text-align: left;
-        padding-left: 0;
-        padding-right: 55px;
+        text-align: justify;
         font-size: 15px;
     }
 
+    #modalWeb .btn-link,
+    #modalDev .btn-link,
     #modalProducts .btn-link {
         text-align: center;
-        padding-right: 55px;
     }
+
+    #modalWeb .close img,
+    #modalDev .close img,
     #modalProducts .close img {
         width: 60%;
         height: 60%;
@@ -288,6 +517,31 @@
         font-weight: 300;
         font-size: 22px;
         line-height: 35px;
+    }
+
+    #modalWeb .row,
+    #modalDev .row,
+    #modalProducts .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #modalWeb img,
+    #modalDev img,
+    #modalProducts img {
+        width: 254px;
+        height: 295px;
+    }
+
+    #modalWeb .modal-dialog,
+    #modalWeb .modal-content,
+    #modalDev .modal-dialog,
+    #modalDev .modal-content,
+    #modalProducts .modal-dialog,
+    #modalProducts .modal-content {
+        /* 80% of window height */
+        height: 450px;
     }
 
 }
@@ -319,31 +573,33 @@
         font-size: 20px;
     }
 
-    #modalProducts img {
-        width: 354px;
-        height: 395px;
-    }
-
+    #modalWeb .card-title,
+    #modalDev .card-title,
     #modalProducts .card-title {
         font-size: 45px;
     }
 
+    #modalWeb .card-text,
+    #modalDev .card-text,
     #modalProducts .card-text {
         text-align: justify;
-        padding-left: 0;
-        padding-right: 90px;
         font-size: 22px;
     }
 
+    #modalWeb .btn-link,
+    #modalDev .btn-link,
     #modalProducts .btn-link {
         text-align: center;
-        padding-right: 75px;
     }
 
+    #modalWeb .btnHyper,
+    #modalDev .btnHyper,
     #modalProducts .btnHyper {
         font-size: 20px;
     }
 
+    #modalWeb .modal-title,
+    #modalDev .modal-title,
     #modalProducts .modal-title {
         font-size: 35px;
         font-weight: bold;
@@ -356,10 +612,20 @@
         font-size: 20px;
     }
 
-
+    #modalWeb .close img,
+    #modalDev .close img,
     #modalProducts .close img {
         width: 80%;
         height: 80%;
     }
-}
 
+    #modalWeb .modal-dialog,
+    #modalWeb .modal-content,
+    #modalDev .modal-dialog,
+    #modalDev .modal-content,
+    #modalProducts .modal-dialog,
+    #modalProducts .modal-content {
+        /* 80% of window height */
+        height: 500px;
+    }
+}

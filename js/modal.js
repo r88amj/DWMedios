@@ -1,3 +1,5 @@
-$('#modalContact').on('shown.bs.modal', function () {
-    $('#myInput').trigger('focus')
-  })
+$("#modalContact").on("show", function () {
+  $("body").addClass("modal-open");
+}).on("hidden", function () {
+  $("body").removeClass("modal-open")
+});

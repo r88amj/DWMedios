@@ -12,7 +12,6 @@
     font-size: 30px;
     line-height: 35px;
     color: #000000;
-    margin-left: 5%;
 }
 
 .aboutInfo {
@@ -88,15 +87,13 @@
 .modaldw a.active {
     background: transparent !important;
     color: black !important;
-    text-align: center;
     text-decoration: underline
 }
 
 .modaldw a {
     color: #D35D69 !important;
-    font-size: 12px;
-    padding: 45px 3px;
-    text-align: center;
+    font-size: 11px;
+    padding: 25px 3px;
     font-weight: 900;
 }
 
@@ -109,6 +106,13 @@
 }
 
 
+
+@media screen and (max-width:767px){
+    .modaldw img.card-img{
+        width: 150px;
+        height: 167px;
+    }
+}    
 
 
 @media screen and (min-width:768px) {
@@ -124,7 +128,7 @@
 
     .modaldw a {
         font-size: 15px;
-        padding: 40px 3px;
+        padding: 22px 3px;
     }
 
     .modaldw .modal-title {
@@ -154,7 +158,6 @@
         font-size: 40px;
         line-height: 50px;
         color: #000000;
-        margin-left: 5%;
     }
 
     .aboutInfo {
@@ -188,7 +191,6 @@
         font-size: 60px;
         line-height: 50px;
         color: #000000;
-        margin-left: 12%;
     }
 
     .aboutInfo {

@@ -4,3 +4,7 @@
     font-family: 'Titillium Web', sans-serif;
 }
 
+body.modal-open {
+    height: 100vh;
+    overflow-y: hidden;
+  }

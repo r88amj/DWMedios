@@ -176,7 +176,7 @@
     <div class="modal-contacto">
         <div class="container-fluid">
             <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" id="modalContact">
-                <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h1 class="modal-title">Estamos ansiosos de trabajar juntos...</h1>
@@ -269,7 +269,7 @@
     <!--************************************************* Main *********************************************************-->
 
     <!-- ***************************************Seccion Áreas *********************************************-->
-    <section class="areas container-fluid" id="areas">
+    <section class="areas" id="areas">
         <div class="d-flex flex-column text-center">
             <div class="container">
                 <h2 class="text-center">Áreas de Desarrollo</h2>
@@ -304,10 +304,61 @@
                                 ayudaremos. Nuestros servicios son de extremo a extremo: ayudamos con
                                 consultoría,
                                 análisis de negocios, diseño y desarrollo.</p>
+                            <!--******************************* Modal ***************************************-->
+                            <!-- Button trigger modal -->
                             <button type="button" class="btn btn-primary btnWeb" data-toggle="modal"
-                                data-target="#modalDev">
+                                data-target="#modalWeb">
                                 Proyectos
                             </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modalWeb" tabindex="-1" role="dialog"
+                                aria-labelledby="modalWebTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-xl modal-dialog-centered"
+                                    role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modalWebTitle">Desarrollo Web</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true"><img src="img/quit.png" alt=""></span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card mb-3">
+                                                <div class="row no-gutters">
+                                                    <div class="col-md-4">
+                                                        <img src="img/web.jpg"
+                                                            class="card-img mx-auto d-block img-fluid">
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <div class="card-body ">
+                                                            <h5 class="card-title">Título Producto</h5>
+                                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur
+                                                                adipisicing elit. Iure
+                                                                eaque maxime suscipit dicta perferendis necessitatibus
+                                                                tenetur architecto
+                                                                dolorem quos quibusdam reiciendis, adipisci officiis
+                                                                consequuntur.</p>
+                                                            <a href="http://angelbracelet.ayuntaeco.com/"
+                                                                class="btn btnHyper" target="_blank">Conoce
+                                                                más</a>
+                                                            <h3 class="card-text text-center"><small
+                                                                    class="text-muted">Copyright © 2020 DW
+                                                                    MEDIOS S.A.
+                                                                    DE C.V </small></h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <hr class="clearfix w-100">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--******************************* Modal ***************************************-->
+
                             <p class="textobjetivo text-center mt-4">Nuestro principal objetivo es el éxito de su
                                 negocio.
                             </p>
@@ -321,10 +372,62 @@
                                 empleados, porque las aplicaciones móviles permiten dar instrucciones, seguir
                                 las
                                 noticias, ver y enviar documentos, etc. </p>
+                            <!--******************************* Modal ***************************************-->
+                            <!-- Button trigger modal -->
                             <button type="button" class="btn btn-primary btnDev" data-toggle="modal"
-                                data-target="#modalWeb">
+                                data-target="#modalDev">
                                 Proyectos
                             </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modalDev" tabindex="-1" role="dialog"
+                                aria-labelledby="modalDevTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-xl modal-dialog-centered"
+                                    role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modalDevTitle">Desarrollo Móvil</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true"><img src="img/quit.png" alt=""></span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card mb-3">
+                                                <div class="row no-gutters">
+                                                    <div class="col-md-4">
+                                                        <img src="img/dev.jpg"
+                                                            class="card-img mx-auto d-block img-fluid">
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <div class="card-body ">
+                                                            <h5 class="card-title">Título Producto</h5>
+                                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur
+                                                                adipisicing elit. Iure
+                                                                eaque maxime suscipit dicta perferendis necessitatibus
+                                                                tenetur architecto
+                                                                dolorem quos quibusdam reiciendis, adipisci officiis
+                                                                consequuntur.</p>
+                                                            <a href="http://angelbracelet.ayuntaeco.com/"
+                                                                class="btn btnHyper" target="_blank">Conoce
+                                                                más</a>
+                                                            <h3 class="card-text text-center"><small
+                                                                    class="text-muted">Copyright © 2020 DW
+                                                                    MEDIOS S.A.
+                                                                    DE C.V </small></h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <hr class="clearfix w-100">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--******************************* Modal ***************************************-->
+
+
                             <p class="textobjetivo text-center mt-4">Tu negocio en tu bolsillo.
                             </p>
                         </div>
@@ -338,69 +441,58 @@
                                 sino tambien en el área de documentación, gestión, consultoría de marcas,
                                 registros
                                 y patentes.</p>
+                            <!--******************************* Modal ***************************************-->
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-primary btnProducts" data-toggle="modal"
                                 data-target="#modalProducts">
                                 Proyectos
                             </button>
 
-                            <!--******************************* Modal ***************************************-->
+                            <!-- Modal -->
                             <div class="modal fade" id="modalProducts" tabindex="-1" role="dialog"
-                                aria-labelledby="modalProductsLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-xl" role="document">
+                                aria-labelledby="modalProductsTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-xl modal-dialog-centered"
+                                    role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Diseño de productos</h5>
+                                            <h5 class="modal-title" id="modalProductsTitle">Diseño de Productos</h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true"><img src="img/quit.png" alt=""></span>
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                            <div id="carouselWeb" class="carousel slide" data-ride="carousel"
-                                                data-interval="false">
-                                                <div class="carousel-inner">
-                                                    <div class="carousel-item active">
-                                                        <div class="row no-gutters modalProduct">
-                                                            <div
-                                                                class="col-12 col-xs-12 col-md-6 col-lg-6 col-xl-6 left">
-                                                                <img src="img/angel.png" class="card-img img-fluid"
-                                                                    alt="...">
-                                                            </div>
-                                                            <div
-                                                                class="col-12 col-xs-12 col-md-6 col-lg-6 col-xl-6 right">
-                                                                <div class="card-body">
-                                                                    <h5 class="card-title">Angel Bracelet</h5>
-                                                                    <p class="card-text">Smartwatch que permite ser una
-                                                                        herramienta
-                                                                        para
-                                                                        personas con Epilepsia, como método de alerta
-                                                                        inmediata al
-                                                                        sufrir un
-                                                                        episodio. Así mismo lleva un historial de la
-                                                                        actividad
-                                                                        física del
-                                                                        usuario para un monitoreo integral.</p>
-                                                                    <div class="btn-link">
-                                                                        <a href="http://angelbracelet.ayuntaeco.com/"
-                                                                            class="btn btnHyper" target="_blank">Conoce
-                                                                            más</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                            <div class="card mb-3">
+                                                <div class="row no-gutters">
+                                                    <div class="col-md-4">
+                                                        <img src="img/angel.png"
+                                                            class="card-img mx-auto d-block img-fluid">
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <div class="card-body ">
+                                                            <h5 class="card-title">Angel Bracelet</h5>
+                                                            <p class="card-text">Smartwatch que permite ser una
+                                                                herramienta
+                                                                para
+                                                                personas con Epilepsia, como método de alerta
+                                                                inmediata al
+                                                                sufrir un
+                                                                episodio. Así mismo lleva un historial de la
+                                                                actividad
+                                                                física del
+                                                                usuario para un monitoreo integral.</p>
+                                                            <a href="http://angelbracelet.ayuntaeco.com/"
+                                                                class="btn btnHyper" target="_blank">Conoce
+                                                                más</a>
+                                                            <h3 class="card-text text-center"><small
+                                                                    class="text-muted">Copyright © 2020 DW MEDIOS S.A.
+                                                                    DE C.V </small></h3>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <a class="carousel-control-prev" href="#carouselWeb" role="button"
-                                                    data-slide="prev">
-                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                    <span class="sr-only">Previous</span>
-                                                </a>
-                                                <a class="carousel-control-next" href="#carouselWeb" role="button"
-                                                    data-slide="next">
-                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                    <span class="sr-only">Next</span>
-                                                </a>
+
                                             </div>
+                                            <hr class="clearfix w-100">
+
                                         </div>
                                     </div>
                                 </div>
@@ -420,7 +512,7 @@
 
 
     <!--********************************* Standard *******************************************-->
-    <section class="standard container-fluid">
+    <section class="standard">
         <div class="d-flex flex-column">
             <div class="container">
                 <h1 class="standard-title text-center">
@@ -455,10 +547,10 @@
 
 
     <!--******************** Seccion de Nosotros ********************-->
-    <section class="aboutUs container-fluid" id="aboutUs">
+    <section class="aboutUs" id="aboutUs">
         <div class="d-flex flex-column">
-            <h2 class="aboutTitle">Nosotros</h2>
             <div class="container">
+                <h2 class="aboutTitle pb-4">Nosotros</h2>
                 <div class="row pt-2 aboutRow">
                     <div class="col-md-6 imgAbout">
                         <img src="img/about.jpg" class="rounded img-fluid">
@@ -479,7 +571,7 @@
                             <!-- Modal -->
                             <div class="modal fade" id="galleryModal" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleTitle" aria-hidden="true">
-                                <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5 class="modal-title w-10" id="exampleTitle">Colaboradores</h5>
@@ -488,45 +580,51 @@
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                            <div class="row">
+                                            <div class="row text-center">
                                                 <div class="col-3">
                                                     <div class="nav flex-column nav-pills" id="dwmedios-tab"
                                                         role="tablist" aria-orientation="vertical">
-                                                        <a class="nav-link active" id="contabilidad-tab"
-                                                            data-toggle="pill" href="#contabilidad" role="tab"
-                                                            aria-controls="Conntabilidad"
+                                                        <a class="nav-link active" id="direccion-tab" data-toggle="pill"
+                                                            href="#direccion" role="tab" aria-controls="direccion"
                                                             aria-selected="true">Dirección</a>
+                                                        <a class="nav-link" id="admin-tab" data-toggle="pill"
+                                                            href="#admin" role="tab" aria-controls="administracion"
+                                                            aria-selected="false">Administración</a>
+                                                        <a class="nav-link" id="mercadotecnia-tab" data-toggle="pill"
+                                                            href="#mercadotecnia" role="tab"
+                                                            aria-controls="mercadotecnia"
+                                                            aria-selected="false">Mercadotecnia</a>
+                                                        <a class="nav-link" id="innovacion-tab" data-toggle="pill"
+                                                            href="#innovacion" role="tab" aria-controls="innovacion"
+                                                            aria-selected="false">Innovación</a>
                                                         <a class="nav-link" id="hardware-tab" data-toggle="pill"
-                                                            href="#hardware" role="tab" aria-controls="Hardware"
+                                                            href="#hardware" role="tab" aria-controls="hardware"
                                                             aria-selected="false">Hardware</a>
                                                         <a class="nav-link" id="software-tab" data-toggle="pill"
-                                                            href="#software" role="tab" aria-controls="Software"
+                                                            href="#software" role="tab" aria-controls="software"
                                                             aria-selected="false">Software</a>
-                                                        <a class="nav-link" id="direccion-tab" data-toggle="pill"
-                                                            href="#direccion" role="tab" aria-controls="Direccion"
-                                                            aria-selected="false">Contabilidad</a>
                                                     </div>
                                                 </div>
                                                 <div class="col-9">
                                                     <div class="tab-content" id="dwmedios-tabContent"
                                                         style="overflow-y:scroll; height:400px">
-                                                        <div class="tab-pane fade show active" id="contabilidad"
-                                                            role="tabpanel" aria-labelledby="Contabilidad-tab">
+                                                        <div class="tab-pane fade show active" id="direccion"
+                                                            role="tabpanel" aria-labelledby="direccion-tab">
                                                             <div class="card mb-3" style="max-width: 540px;">
                                                                 <div class="row no-gutters">
-                                                                    <div class="col-md-4">
-                                                                        <img src="https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png"
-                                                                            class="card-img img-fluid">
+                                                                    <div class="col-md-4 align-self-center">
+                                                                        <img src="img/colaboradores2/Direccion/DonWilly.jpg"
+                                                                            class="card-img">
                                                                     </div>
-                                                                    <div class="col-md-8">
+                                                                    <div class="col-md-8 align-self-center">
                                                                         <div class="card-body">
-                                                                            <h5 class="card-title">Nombe de empleado
+                                                                            <h5 class="card-title">William López
                                                                             </h5>
                                                                             <p class="card-text">Cargo que ocupa en la
                                                                                 empresa</p>
                                                                             <p class="card-text"><small
-                                                                                    class="text-muted">Informacion
-                                                                                    adicional sobre el empleado</small>
+                                                                                    class="text-muted"> DW
+                                                                                    MEDIOS</small>
                                                                             </p>
                                                                         </div>
                                                                     </div>
@@ -534,19 +632,19 @@
                                                             </div>
                                                             <div class="card mb-3" style="max-width: 540px;">
                                                                 <div class="row no-gutters">
-                                                                    <div class="col-md-4">
-                                                                        <img src="https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png"
-                                                                            class="card-img img-fluid">
+                                                                    <div class="col-md-4 align-self-center">
+                                                                        <img src="img/colaboradores2/Direccion/Cristian.jpg"
+                                                                            class="card-img">
                                                                     </div>
-                                                                    <div class="col-md-8">
+                                                                    <div class="col-md-8 align-self-center">
                                                                         <div class="card-body">
-                                                                            <h5 class="card-title">Nombe de empleado
+                                                                            <h5 class="card-title">Christian López
                                                                             </h5>
                                                                             <p class="card-text">Cargo que ocupa en la
                                                                                 empresa</p>
                                                                             <p class="card-text"><small
-                                                                                    class="text-muted">Informacion
-                                                                                    adicional sobre el empleado</small>
+                                                                                    class="text-muted"> DW
+                                                                                    MEDIOS</small>
                                                                             </p>
                                                                         </div>
                                                                     </div>
@@ -554,19 +652,42 @@
                                                             </div>
                                                             <div class="card mb-3" style="max-width: 540px;">
                                                                 <div class="row no-gutters">
-                                                                    <div class="col-md-4">
-                                                                        <img src="https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png"
-                                                                            class="card-img img-fluid">
+                                                                    <div class="col-md-4 align-self-center">
+                                                                        <img src="img/colaboradores2/Direccion/Darany.jpg"
+                                                                            class="card-img">
                                                                     </div>
-                                                                    <div class="col-md-8">
+                                                                    <div class="col-md-8 align-self-center">
                                                                         <div class="card-body">
-                                                                            <h5 class="card-title">Nombe de empleado
+                                                                            <h5 class="card-title">Darany López
                                                                             </h5>
                                                                             <p class="card-text">Cargo que ocupa en la
                                                                                 empresa</p>
                                                                             <p class="card-text"><small
-                                                                                    class="text-muted">Informacion
-                                                                                    adicional sobre el empleado</small>
+                                                                                    class="text-muted"> DW
+                                                                                    MEDIOS</small>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="admin" role="tabpanel"
+                                                            aria-labelledby="admin-tab">
+                                                            <div class="card mb-3" style="max-width: 540px;">
+                                                                <div class="row no-gutters">
+                                                                    <div class="col-md-4 align-self-center">
+                                                                        <img src="img/colaboradores2/Contabilidad/Jose.jpg"
+                                                                            class="card-img">
+                                                                    </div>
+                                                                    <div class="col-md-8 align-self-center">
+                                                                        <div class="card-body">
+                                                                            <h5 class="card-title">José Ojeda
+                                                                            </h5>
+                                                                            <p class="card-text">Cargo que ocupa en la
+                                                                                empresa</p>
+                                                                            <p class="card-text"><small
+                                                                                    class="text-muted"> DW
+                                                                                    MEDIOS</small>
                                                                             </p>
                                                                         </div>
                                                                     </div>
@@ -574,19 +695,125 @@
                                                             </div>
                                                             <div class="card mb-3" style="max-width: 540px;">
                                                                 <div class="row no-gutters">
-                                                                    <div class="col-md-4">
-                                                                        <img src="https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png"
-                                                                            class="card-img img-fluid">
+                                                                    <div class="col-md-4 align-self-center">
+                                                                        <img src="img/colaboradores2/Contabilidad/Pablo.jpg"
+                                                                            class="card-img">
                                                                     </div>
-                                                                    <div class="col-md-8">
+                                                                    <div class="col-md-8 align-self-center">
                                                                         <div class="card-body">
-                                                                            <h5 class="card-title">Nombe de empleado
+                                                                            <h5 class="card-title">Pablo Koyoc
                                                                             </h5>
                                                                             <p class="card-text">Cargo que ocupa en la
                                                                                 empresa</p>
                                                                             <p class="card-text"><small
-                                                                                    class="text-muted">Informacion
-                                                                                    adicional sobre el empleado</small>
+                                                                                    class="text-muted"> DW
+                                                                                    MEDIOS</small>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card mb-3" style="max-width: 540px;">
+                                                                <div class="row no-gutters">
+                                                                    <div class="col-md-4 align-self-center">
+                                                                        <img src="img/colaboradores2/Contabilidad/Carina.jpg"
+                                                                            class="card-img">
+                                                                    </div>
+                                                                    <div class="col-md-8 align-self-center">
+                                                                        <div class="card-body">
+                                                                            <h5 class="card-title">Carina Gongora
+                                                                            </h5>
+                                                                            <p class="card-text">Cargo que ocupa en la
+                                                                                empresa</p>
+                                                                            <p class="card-text"><small
+                                                                                    class="text-muted"> DW
+                                                                                    MEDIOS</small>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card mb-3" style="max-width: 540px;">
+                                                                <div class="row no-gutters">
+                                                                    <div class="col-md-4 align-self-center">
+                                                                        <img src="img/colaboradores2/Contabilidad/AdrianEkChi.jpg"
+                                                                            class="card-img">
+                                                                    </div>
+                                                                    <div class="col-md-8 align-self-center">
+                                                                        <div class="card-body">
+                                                                            <h5 class="card-title">Adrián Ek
+                                                                            </h5>
+                                                                            <p class="card-text">Cargo que ocupa en la
+                                                                                empresa</p>
+                                                                            <p class="card-text"><small
+                                                                                    class="text-muted"> DW
+                                                                                    MEDIOS</small>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="mercadotecnia" role="tabpanel"
+                                                            aria-labelledby="mercadotecnia-tab">
+                                                            <div class="card mb-3" style="max-width: 540px;">
+                                                                <div class="row no-gutters">
+                                                                    <div class="col-md-4 align-self-center">
+                                                                        <img src="img/colaboradores2/Mercadotecnia/Claudia.jpg"
+                                                                            class="card-img">
+                                                                    </div>
+                                                                    <div class="col-md-8 align-self-center">
+                                                                        <div class="card-body">
+                                                                            <h5 class="card-title">Claudia Castro
+                                                                            </h5>
+                                                                            <p class="card-text">Cargo que ocupa en la
+                                                                                empresa</p>
+                                                                            <p class="card-text"><small
+                                                                                    class="text-muted"> DW
+                                                                                    MEDIOS</small>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="innovacion" role="tabpanel"
+                                                            aria-labelledby="innovacion-tab">
+                                                            <div class="card mb-3" style="max-width: 540px;">
+                                                                <div class="row no-gutters">
+                                                                    <div class="col-md-4 align-self-center">
+                                                                        <img src="img/colaboradores2/Innovacion Tecnologica/Lorena.jpg"
+                                                                            class="card-img">
+                                                                    </div>
+                                                                    <div class="col-md-8 align-self-center">
+                                                                        <div class="card-body">
+                                                                            <h5 class="card-title">Lorena Tzab
+                                                                            </h5>
+                                                                            <p class="card-text">Cargo que ocupa en la
+                                                                                empresa</p>
+                                                                            <p class="card-text"><small
+                                                                                    class="text-muted"> DW
+                                                                                    MEDIOS</small>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card mb-3" style="max-width: 540px;">
+                                                                <div class="row no-gutters">
+                                                                    <div class="col-md-4 align-self-center">
+                                                                        <img src="img/colaboradores2/Innovacion Tecnologica/Diego.jpg"
+                                                                            class="card-img">
+                                                                    </div>
+                                                                    <div class="col-md-8 align-self-center">
+                                                                        <div class="card-body">
+                                                                            <h5 class="card-title">Diego Azcué
+                                                                            </h5>
+                                                                            <p class="card-text">Cargo que ocupa en la
+                                                                                empresa</p>
+                                                                            <p class="card-text"><small
+                                                                                    class="text-muted"> DW
+                                                                                    MEDIOS</small>
                                                                             </p>
                                                                         </div>
                                                                     </div>
@@ -594,22 +821,22 @@
                                                             </div>
                                                         </div>
                                                         <div class="tab-pane fade" id="hardware" role="tabpanel"
-                                                            aria-labelledby="Hardware-tab">
+                                                            aria-labelledby="hardware-tab">
                                                             <div class="card mb-3" style="max-width: 540px;">
                                                                 <div class="row no-gutters">
-                                                                    <div class="col-md-4">
-                                                                        <img src="https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png"
-                                                                            class="card-img img-fluid">
+                                                                    <div class="col-md-4 align-self-center">
+                                                                        <img src="img/colaboradores2/Hardware/Daniel.jpg"
+                                                                            class="card-img">
                                                                     </div>
-                                                                    <div class="col-md-8">
+                                                                    <div class="col-md-8 align-self-center">
                                                                         <div class="card-body">
-                                                                            <h5 class="card-title">Nombe de empleado
+                                                                            <h5 class="card-title">Daniel Hernández
                                                                             </h5>
                                                                             <p class="card-text">Cargo que ocupa en la
                                                                                 empresa</p>
                                                                             <p class="card-text"><small
-                                                                                    class="text-muted">Informacion
-                                                                                    adicional sobre el empleado</small>
+                                                                                    class="text-muted"> DW
+                                                                                    MEDIOS</small>
                                                                             </p>
                                                                         </div>
                                                                     </div>
@@ -617,19 +844,19 @@
                                                             </div>
                                                             <div class="card mb-3" style="max-width: 540px;">
                                                                 <div class="row no-gutters">
-                                                                    <div class="col-md-4">
-                                                                        <img src="https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png"
-                                                                            class="card-img img-fluid">
+                                                                    <div class="col-md-4 align-self-center">
+                                                                        <img src="https://trainingpoint.xyz/wp-content/uploads/2019/01/Avatar_3-1.png"
+                                                                            class="card-img">
                                                                     </div>
-                                                                    <div class="col-md-8">
+                                                                    <div class="col-md-8 align-self-center">
                                                                         <div class="card-body">
-                                                                            <h5 class="card-title">Nombe de empleado
+                                                                            <h5 class="card-title">Ricardo May
                                                                             </h5>
                                                                             <p class="card-text">Cargo que ocupa en la
                                                                                 empresa</p>
                                                                             <p class="card-text"><small
-                                                                                    class="text-muted">Informacion
-                                                                                    adicional sobre el empleado</small>
+                                                                                    class="text-muted"> DW
+                                                                                    MEDIOS</small>
                                                                             </p>
                                                                         </div>
                                                                     </div>
@@ -637,19 +864,19 @@
                                                             </div>
                                                             <div class="card mb-3" style="max-width: 540px;">
                                                                 <div class="row no-gutters">
-                                                                    <div class="col-md-4">
-                                                                        <img src="https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png"
-                                                                            class="card-img img-fluid">
+                                                                    <div class="col-md-4 align-self-center">
+                                                                        <img src="https://trainingpoint.xyz/wp-content/uploads/2019/01/Avatar_3-1.png"
+                                                                            class="card-img">
                                                                     </div>
-                                                                    <div class="col-md-8">
+                                                                    <div class="col-md-8 align-self-center">
                                                                         <div class="card-body">
-                                                                            <h5 class="card-title">Nombe de empleado
+                                                                            <h5 class="card-title">Alejandro Pool
                                                                             </h5>
                                                                             <p class="card-text">Cargo que ocupa en la
                                                                                 empresa</p>
                                                                             <p class="card-text"><small
-                                                                                    class="text-muted">Informacion
-                                                                                    adicional sobre el empleado</small>
+                                                                                    class="text-muted"> DW
+                                                                                    MEDIOS</small>
                                                                             </p>
                                                                         </div>
                                                                     </div>
@@ -657,125 +884,202 @@
                                                             </div>
                                                         </div>
                                                         <div class="tab-pane fade" id="software" role="tabpanel"
-                                                            aria-labelledby="Software-tab">
-                                                            <div class="card mb-3" style="max-width: 540px;">
+                                                            aria-labelledby="software-tab">
+                                                            <div class="card mb-3 " style="max-width: 540px;">
                                                                 <div class="row no-gutters">
-                                                                    <div class="col-md-4">
-                                                                        <img src="https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png"
-                                                                            class="card-img img-fluid">
+                                                                    <div class="col-md-4 align-self-center">
+                                                                        <img src="img/colaboradores2/Software/Alicia.jpg"
+                                                                            class="card-img">
                                                                     </div>
-                                                                    <div class="col-md-8">
+                                                                    <div class="col-md-8 align-self-center">
                                                                         <div class="card-body">
-                                                                            <h5 class="card-title">Nombe de empleado
+                                                                            <h5 class="card-title">Alicia Medina
                                                                             </h5>
                                                                             <p class="card-text">Cargo que ocupa en la
                                                                                 empresa</p>
                                                                             <p class="card-text"><small
-                                                                                    class="text-muted">Informacion
-                                                                                    adicional sobre el empleado</small>
+                                                                                    class="text-muted"> DW
+                                                                                    MEDIOS</small>
                                                                             </p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="card mb-3" style="max-width: 540px;">
+                                                            <div class="card mb-3 " style="max-width: 540px;">
                                                                 <div class="row no-gutters">
-                                                                    <div class="col-md-4">
-                                                                        <img src="https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png"
-                                                                            class="card-img img-fluid">
+                                                                    <div class="col-md-4 align-self-center">
+                                                                        <img src="img/colaboradores2/Software/Lupita.jpg"
+                                                                            class="card-img">
                                                                     </div>
-                                                                    <div class="col-md-8">
+                                                                    <div class="col-md-8 align-self-center">
                                                                         <div class="card-body">
-                                                                            <h5 class="card-title">Nombe de empleado
+                                                                            <h5 class="card-title">Guadalupe Pool
                                                                             </h5>
                                                                             <p class="card-text">Cargo que ocupa en la
                                                                                 empresa</p>
                                                                             <p class="card-text"><small
-                                                                                    class="text-muted">Informacion
-                                                                                    adicional sobre el empleado</small>
+                                                                                    class="text-muted"> DW
+                                                                                    MEDIOS</small>
                                                                             </p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="card mb-3" style="max-width: 540px;">
+                                                            <div class="card mb-3 " style="max-width: 540px;">
                                                                 <div class="row no-gutters">
-                                                                    <div class="col-md-4">
-                                                                        <img src="https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png"
-                                                                            class="card-img img-fluid">
+                                                                    <div class="col-md-4 align-self-center">
+                                                                        <img src="img/colaboradores2/Software/LuisL.jpg"
+                                                                            class="card-img">
                                                                     </div>
-                                                                    <div class="col-md-8">
+                                                                    <div class="col-md-8 align-self-center">
                                                                         <div class="card-body">
-                                                                            <h5 class="card-title">Nombe de empleado
+                                                                            <h5 class="card-title">Luis López
                                                                             </h5>
                                                                             <p class="card-text">Cargo que ocupa en la
                                                                                 empresa</p>
                                                                             <p class="card-text"><small
-                                                                                    class="text-muted">Informacion
-                                                                                    adicional sobre el empleado</small>
+                                                                                    class="text-muted"> DW
+                                                                                    MEDIOS</small>
                                                                             </p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="tab-pane fade" id="direccion" role="tabpanel"
-                                                            aria-labelledby="Direccion-tab">
-                                                            <div class="card mb-3" style="max-width: 540px;">
+                                                            <div class="card mb-3 " style="max-width: 540px;">
                                                                 <div class="row no-gutters">
-                                                                    <div class="col-md-4">
-                                                                        <img src="https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png"
-                                                                            class="card-img img-fluid">
+                                                                    <div class="col-md-4 align-self-center">
+                                                                        <img src="img/colaboradores2/Software/Luis.jpg"
+                                                                            class="card-img">
                                                                     </div>
-                                                                    <div class="col-md-8">
+                                                                    <div class="col-md-8 align-self-center">
                                                                         <div class="card-body">
-                                                                            <h5 class="card-title">Nombe de empleado
+                                                                            <h5 class="card-title">Luis Cabañas
                                                                             </h5>
                                                                             <p class="card-text">Cargo que ocupa en la
                                                                                 empresa</p>
                                                                             <p class="card-text"><small
-                                                                                    class="text-muted">Informacion
-                                                                                    adicional sobre el empleado</small>
+                                                                                    class="text-muted"> DW
+                                                                                    MEDIOS</small>
                                                                             </p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="card mb-3" style="max-width: 540px;">
+                                                            <div class="card mb-3 " style="max-width: 540px;">
                                                                 <div class="row no-gutters">
-                                                                    <div class="col-md-4">
-                                                                        <img src="https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png"
-                                                                            class="card-img img-fluid">
+                                                                    <div class="col-md-4 align-self-center">
+                                                                        <img src="img/colaboradores2/Software/Brayan.jpg"
+                                                                            class="card-img">
                                                                     </div>
-                                                                    <div class="col-md-8">
+                                                                    <div class="col-md-8 align-self-center">
                                                                         <div class="card-body">
-                                                                            <h5 class="card-title">Nombe de empleado
+                                                                            <h5 class="card-title">Brayan Novelo
                                                                             </h5>
                                                                             <p class="card-text">Cargo que ocupa en la
                                                                                 empresa</p>
                                                                             <p class="card-text"><small
-                                                                                    class="text-muted">Informacion
-                                                                                    adicional sobre el empleado</small>
+                                                                                    class="text-muted"> DW
+                                                                                    MEDIOS</small>
                                                                             </p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="card mb-3" style="max-width: 540px;">
+                                                            <div class="card mb-3 " style="max-width: 540px;">
                                                                 <div class="row no-gutters">
-                                                                    <div class="col-md-4">
-                                                                        <img src="https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png"
-                                                                            class="card-img img-fluid">
+                                                                    <div class="col-md-4 align-self-center">
+                                                                        <img src="img/colaboradores2/Software/Oscar.jpg"
+                                                                            class="card-img">
                                                                     </div>
-                                                                    <div class="col-md-8">
+                                                                    <div class="col-md-8 align-self-center">
                                                                         <div class="card-body">
-                                                                            <h5 class="card-title">Nombe de empleado
+                                                                            <h5 class="card-title">Oscar González
                                                                             </h5>
                                                                             <p class="card-text">Cargo que ocupa en la
                                                                                 empresa</p>
                                                                             <p class="card-text"><small
-                                                                                    class="text-muted">Informacion
-                                                                                    adicional sobre el empleado</small>
+                                                                                    class="text-muted"> DW
+                                                                                    MEDIOS</small>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card mb-3 " style="max-width: 540px;">
+                                                                <div class="row no-gutters">
+                                                                    <div class="col-md-4 align-self-center">
+                                                                        <img src="img/colaboradores2/Software/Leandro.jpg"
+                                                                            class="card-img">
+                                                                    </div>
+                                                                    <div class="col-md-8 align-self-center">
+                                                                        <div class="card-body">
+                                                                            <h5 class="card-title">Leandro Cen
+                                                                            </h5>
+                                                                            <p class="card-text">Cargo que ocupa en la
+                                                                                empresa</p>
+                                                                            <p class="card-text"><small
+                                                                                    class="text-muted"> DW
+                                                                                    MEDIOS</small>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card mb-3 " style="max-width: 540px;">
+                                                                <div class="row no-gutters">
+                                                                    <div class="col-md-4 align-self-center">
+                                                                        <img src="img/colaboradores2/Software/Marco.jpg"
+                                                                            class="card-img">
+                                                                    </div>
+                                                                    <div class="col-md-8 align-self-center">
+                                                                        <div class="card-body">
+                                                                            <h5 class="card-title">Marco Yam
+                                                                            </h5>
+                                                                            <p class="card-text">Cargo que ocupa en la
+                                                                                empresa</p>
+                                                                            <p class="card-text"><small
+                                                                                    class="text-muted"> DW
+                                                                                    MEDIOS</small>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card mb-3 " style="max-width: 540px;">
+                                                                <div class="row no-gutters">
+                                                                    <div class="col-md-4 align-self-center">
+                                                                        <img src="img/colaboradores2/Software/Ernesto.jpg"
+                                                                            class="card-img">
+                                                                    </div>
+                                                                    <div class="col-md-8 align-self-center">
+                                                                        <div class="card-body">
+                                                                            <h5 class="card-title">Ernesto Cime
+                                                                            </h5>
+                                                                            <p class="card-text">Cargo que ocupa en la
+                                                                                empresa</p>
+                                                                            <p class="card-text"><small
+                                                                                    class="text-muted"> DW
+                                                                                    MEDIOS</small>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card mb-3 " style="max-width: 540px;">
+                                                                <div class="row no-gutters">
+                                                                    <div class="col-md-4 align-self-center">
+                                                                        <img src="img/colaboradores2/Software/Omar.jpg"
+                                                                            class="card-img">
+                                                                    </div>
+                                                                    <div class="col-md-8 align-self-center">
+                                                                        <div class="card-body">
+                                                                            <h5 class="card-title">Omar Pacheco
+                                                                            </h5>
+                                                                            <p class="card-text">Cargo que ocupa en la
+                                                                                empresa</p>
+                                                                            <p class="card-text"><small
+                                                                                    class="text-muted"> DW
+                                                                                    MEDIOS</small>
                                                                             </p>
                                                                         </div>
                                                                     </div>
@@ -822,24 +1126,27 @@
     <!--*********************************************** Footer *********************************************-->
     <footer id="myFooter" class="page-footer">
         <div class="container">
+            <div class="footer-title">
+                <h3 class="font-weight-bold text-uppercase text-center">Ponte en contacto con nosotros.</h3>
+            </div>
             <div class="row text-center mb-3">
-                <div class="col-sm-3">
+                <div class="col-md-6 col-lg-3">
                     <h5 class="font-weight-bold text-uppercase mt-3 ">Dirección</h5>
                     <h6>Calle 28 Num. 115 entre 1H y 1G <br> Residencial Montecristo, 97133, <br> Mérida, Yucatán,
                         México.</h6>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-md-6 col-lg-3">
                     <h5 class="font-weight-bold text-uppercase mt-3 ">Horario</h5>
                     <h6>Lunes a Viernes <br> De 8:00 hrs a 18:00 hrs</h6>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-md-6 col-lg-3">
                     <h5 class="font-weight-bold text-uppercase mt-3">Teléfonos</h5>
                     <a href="tel:+529999441159"><i class="fas fa-phone"></i> &nbsp;999 944 1159</a>
                     <br>
                     <a href="https://wa.me/529993317117" target="_blank"><i class="fab fa-whatsapp"></i> &nbsp;999
                         331 7117</a>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-md-6 col-lg-3">
                     <h5 class="font-weight-bold text-uppercase mt-3">Correo</h5>
                     <a href="mailto:contactanos@dwmedios.com"><i class="far fa-envelope"></i>
                         &nbsp;contactanos@dwmedios.com</a>
@@ -851,7 +1158,7 @@
                 tabindex="0"></iframe>
         </div>
         <div class="logoDw mt-4">
-            <a href="#"><img src="img/white.svg" class="mx-auto d-block " alt=""></a>
+            <a href="#"><img src="img/white.svg" class="mx-auto d-block" alt=""></a>
         </div>
         <div class="social-networks">
             <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-center">¡Síguenos en nuestras redes sociales!
@@ -895,7 +1202,6 @@
     <script src="js/navbar.js"></script>
     <script src="js/mainSection.js"></script>
     <script src="js/typed.js"></script>
-    <script src="js/modal.js"></script>
     <!-- Tabs -->
     <script>
         $(document).ready(function () {

@@ -62,7 +62,8 @@
 .third h5 {
     color: white;
     font-size: 30px;
-    text-shadow: 1px 1px 2px black
+    text-shadow: 1px 1px 2px black;
+    padding-top: 10px;
 }
 
 a.btn.btn-danger {
@@ -119,7 +120,13 @@ a.btn.btn-success:hover {
     height: 100%;
 }
 
+@media screen and (min-width:1024px) {
+   .contenido  .btn-success{
+        font-size: 18px;
+    }
+  
 
+}
 
 @media screen and (max-width:1199px) {
     .rightside {
@@ -254,9 +261,9 @@ a.btn.btn-success:hover {
         font-size: 10px;
     }
 
-    .rightside h5 {
+    /* .rightside h5 {
         font-size: 12px;
-    }
+    } */
 
     .first img,
     .third img {
@@ -335,9 +342,9 @@ a.btn.btn-success:hover {
         font-size: 10px;
     }
 
-    .rightside h5 {
+    /* .rightside h5 {
         font-size: 12px;
-    }
+    } */
 
     .first img,
     .third img {
@@ -383,12 +390,27 @@ a.btn.btn-success:hover {
 
 @media screen and (min-width:768px) {
     .contenido h5 {
-        font-size: 20px;
+        font-size: 25px;
     }
 
-    .second img{
+    .second img {
         width: 117px;
         height: 117px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .contenido h5 {
+        font-size: 30px;
+    }
+
+    .second img {
+        width: 117px;
+        height: 117px;
+    }
+
+    .contenido  .btn-success{
+        font-size: 18px;
     }
 
 }
